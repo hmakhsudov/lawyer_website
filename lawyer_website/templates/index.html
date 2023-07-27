@@ -1042,6 +1042,7 @@
                                         менеджером</div>
                                     <div class="form_box__content">
                                         <form class="form" method="POST">
+                                            {% csrf_token %}
                                             <input type="hidden" class="frm_tariff" name="tariff" value="unset">
                                             <div class="form_group">
                                                 <input class="form_control clean_input" type="text" name="name"
