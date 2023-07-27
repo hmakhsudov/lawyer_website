@@ -1,3 +1,0 @@
-User-agent: *
-Host: https://edu.fin-partners.ru
-Sitemap: https://edu.fin-partners.ru/sitemap.xml
