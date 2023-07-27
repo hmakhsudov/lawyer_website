@@ -1,0 +1,16 @@
+{
+  "short_name": "Обучение кредитных и ипотечных брокеров | Финансовые партнёры",
+  "name": "Обучение кредитных и ипотечных брокеров | Финансовые партнёры",
+  "icons": [
+    {
+      "src": "/img/meta/apple-touch-icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "https://edu.fin-partners.ru/",
+  "background_color": "#25354C",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#25354C"
+}
