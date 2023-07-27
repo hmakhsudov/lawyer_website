@@ -13,9 +13,10 @@ def process_form(request):
         # Get the form data from the request.POST dictionary
         name = request.POST.get('name')
         email = request.POST.get('email')
+        phone = request.POST.get('phone')
         
         subject = 'Test Email'  # The subject of the email
-        message = f'Hello, {name}, This is a test email from Django.'  # The email body message
+        message = f'Hello, {name},{phone}, This is a test email from Django.'  # The email body message
         from_email = settings.EMAIL_HOST_USER  # The sender's email address
         recipient_list = [email,]  # A list of recipient email addresses
 
