@@ -14,9 +14,9 @@ services:
     build: ./nginx
     volumes:
       - static:/static
-      - ./www_school_broker_ru_2024_02_22.crt:/etc/ssl/zb/www_school_broker_ru_2024_02_22.crt  
-      - ./ssl_key.key:/etc/ssl/zb/ssl_key.key
-      - ./intermediate_pem_globalsign_ssl_dv_free_1.crt:/etc/ssl/zb/intermediate_pem_globalsign_ssl_dv_free_1.crt
+      - ./www_school_broker_ru_2024_02_22.crt:/www_school_broker_ru_2024_02_22.crt  
+      - ./ssl_key.key:/ssl_key.key
+      - ./intermediate_pem_globalsign_ssl_dv_free_1.crt:/intermediate_pem_globalsign_ssl_dv_free_1.crt
     ports:
       - "80:80"
     depends_on:
