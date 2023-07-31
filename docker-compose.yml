@@ -14,7 +14,7 @@ services:
     build: ./nginx
     volumes:
       - static:/static
-      - /combined.crt:/etc/nginx/combined.crt  
+      - /combined.crt:/etc/nginx/www_school_broker_ru_2024_02_22.crt  
       - /ssl_key.key:/etc/nginx/ssl_key.key
       - /intermediate_pem_globalsign_ssl_dv_free_1.crt:/etc/nginx/intermediate_pem_globalsign_ssl_dv_free_1.crt
     ports:
