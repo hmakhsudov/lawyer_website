@@ -14,6 +14,8 @@ services:
     build: ./nginx
     volumes:
       - static:/static
+      - ./combined.crt:/etc/nginx/combined.crt  
+      - ./ssl_key.key:/etc/nginx/ssl_key.key
     ports:
       - "80:80"
     depends_on:
