@@ -19,6 +19,7 @@ services:
       - ./intermediate_pem_globalsign_ssl_dv_free_1.crt:/intermediate_pem_globalsign_ssl_dv_free_1.crt
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - django_gunicorn
 
