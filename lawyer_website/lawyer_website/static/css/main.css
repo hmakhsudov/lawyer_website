@@ -1951,14 +1951,14 @@ a:hover {
   justify-content: space-between;
 }
 .header__logo {
-  height: 57px;
-  width: 57px;
+  width: 400px;
+  height: 70px;
   padding-left: 57px;
   color: #191919;
   font-size: 1.4rem;
   line-height: 2rem;
   white-space: nowrap;
-  background: url("../img/logo.jpg") 0 50% no-repeat;
+  background: url("../img/logo.png") 0 50% no-repeat;
 }
 .header__logo_wrap {
   display: none;
@@ -1998,14 +1998,16 @@ a:hover {
   text-decoration: none;
 }
 @media (min-width: 576px) {
-  .header__logo {
-    width: 241px;
-  }
+
 }
 @media (min-width: 768px) {
   .header__contact {
     padding-left: 70px;
     background: url("../img/icon__phone.png") 0 50% no-repeat;
+  }
+
+  .header__logo{
+    width: 400px !important;
   }
   .header__contact_phone {
     font-size: 2.4rem;
@@ -2265,9 +2267,11 @@ a:hover {
 }
 
 .whom .form_box{
-  margin-top: 80px;
-  margin-bottom: 30px;
-  margin-right: 40px;
+
+  position: absolute;
+  right: 0px;
+  left: -40px;
+  top: 550px;
 }
 
 .form_box:before {
@@ -2529,18 +2533,7 @@ a:hover {
     border-radius: 50%;
   }
 }
-@media (min-width: 1400px) {
-  .promo__wrap:before {
-    left: 560px;
-  }
-  .promo__text {
-    min-width: 600px;
-  }
-  .promo__period {
-    top: 320px;
-    right: -170px;
-  }
-}
+
 
 .start__row {
   padding-top: 40px;
@@ -2752,14 +2745,6 @@ a:hover {
 
 }
 
-.curse__form-left{
-  width: 60%;
-  text-align: left;
-}
-.curse__form-left h2{
-  text-align: left;
-}
-
 
 
 
@@ -2929,6 +2914,7 @@ a:hover {
   }
   .whom__right {
     width: 300px;
+    position: relative;
   }
   .whom__user {
     width: 100%;
@@ -3459,11 +3445,12 @@ a:hover {
     left: -100px;
     bottom: 0;
     z-index: 1;
+    top: -20px;
     content: "";
     width: 394px;
     height: 280px;
     position: absolute;
-    background: url("../img/price__people.jpg") 0 0 no-repeat;
+    background: url("../img/cost_man.png") 0 0 no-repeat;
     background-size: cover;
   }
   .cost__block {
@@ -3547,7 +3534,7 @@ a:hover {
     padding-left: 470px;
   }
   .cost__header_content:before {
-    left: -320px;
+    left: -345px;
     width: 798px;
     height: 567px;
   }
@@ -4091,10 +4078,8 @@ a:hover {
   border-radius: 20px;
 }
 
-.comment-2{
-  margin: auto;
-  width: 700px;
-  margin-bottom: 8px;
+@media (min-width: 768px) {
+  
 
 }
 
@@ -4435,7 +4420,6 @@ a:hover {
     height: 523px;
     display: block;
     position: absolute;
-    background: url("../img/expert__bg_01.png") 0 0 no-repeat;
     background-size: cover;
   }
   .expert .form_box {
@@ -4721,5 +4705,102 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+
+
+
+@media (min-width:300px) {
+  .curse__list{
+    display: block;
+  }
+  .curse__form{
+    display: block;
+    text-align: center;
+  }
+  .curse__form-left{
+    width: 100%;
+  }
+  .curse__form-right .form_box{
+    margin-bottom: 70px;
+  }
+
+  .header__logo{
+    width: auto;
+  }
+
+  .whom .form_box{
+    top: 1000px;
+    left: 0;
+  }
+  .comments{
+    margin-top: 620px;
+  }
+  .comment-2{
+    width: 320px;
+    text-align: center !important;
+    margin: 0 auto;
+    }
+
+  .comment-2 .comment__author{
+    display: block;
+    text-align: center;
+
+  }
+  .name2{
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (min-width:450px) {
+  .comment-2{
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .whom .form_box{
+    position: absolute;
+    left: -220px;
+    top: 741px;
+    margin: 0px
+    
+  }
+
+
+  .comments{
+    margin-top: 450px;
+  }
+
+  .comment-2{
+    margin: auto;
+    width: 700px !important;
+    margin-bottom: 8px;
+
+  }
+  .comment-2 .comment__author{
+    display: flex !important;
+    text-align: left !important;
+
+  }
+
+}
+
+@media (min-width: 1120px){
+  .curse__list{
+    display: flex;
+  }
+  .curse__form-left{
+    width: 60%;
+    text-align: left;
+  }
+  .curse__form-left h2{
+    text-align: left;
+  }
+  .curse__form{
+    display: flex;
+  }
 }
 

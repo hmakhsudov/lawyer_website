@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
-
+from .models import Testimonial
 def index(request):
     return render(request, 'index.html')
 
@@ -26,5 +26,14 @@ def process_form(request):
         # ...
 
         # For example, you can print the form data to the console
+
+    return render(request, 'success.html')
+
+def process_form_testimonial(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        Testimonial.objects.create(name=name, email=email, phone=phone)
 
     return render(request, 'success.html')

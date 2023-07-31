@@ -4,14 +4,7 @@ $(".btn_modal").fancybox({
 });
 
 // Scroll
-$(".btn_scroll").click(function (e) {
-    e.preventDefault();
 
-    var str = $(this).attr('href');
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(str).offset().top
-    }, 500);
-});
 
 
 var comments = new Swiper('.comments__slider', {
