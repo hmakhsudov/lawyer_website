@@ -4736,6 +4736,9 @@ select {
   .comments{
     margin-top: 620px;
   }
+  .comments-2{
+    margin-top: 50px !important;
+  }
   .comment-2{
     width: 320px;
     text-align: center !important;
