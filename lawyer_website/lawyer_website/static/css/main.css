@@ -2942,7 +2942,8 @@ a:hover {
 }
 @media (min-width: 992px) {
   .whom {
-    height: 1260px;
+    height: 900px;
+    overflow: hidden;
     background: url("../img/sveta_blur2.jpg") 50% 0 no-repeat;
     background-size: auto auto;
   }
@@ -4745,7 +4746,7 @@ select {
     left: 0;
   }
   .comments{
-    margin-top: 620px;
+    margin-top: 150px;
   }
   .comments-2{
     margin-top: 50px !important;
@@ -4785,7 +4786,7 @@ select {
 
 
   .comments{
-    margin-top: 450px;
+    margin-top: 150px;
   }
 
   .comment-2{

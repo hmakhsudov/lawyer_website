@@ -603,36 +603,7 @@
                                     получает вознаграждение за успехи в каждой из них.</div>
                             </li>
                         </ul>
-                        <div class="form_box">
-                            <div class="form_box__inner">
-                                <div class="form_box__wrap">
-                                    <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                    <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
-                                    <div class="form_box__content">
-                                        <form class="form" method="POST" action="{% url 'process_form' %}">
-                                            {% csrf_token %}
-                                            <input type="hidden" class="frm_tariff" name="tariff" value="unset">
-                                            <div class="form_group">
-                                                <input class="form_control clean_input" type="text" name="name" id="name"
-                                                    placeholder="Введите ваше имя">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="email" name="email" id="email"
-                                                    placeholder="Введите вашу почту*">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="phone" name="phone" id="phone"
-                                                    placeholder="Введите ваш номер*">
-                                            </div>
-                                            <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>Подать заявку на кредит</span></button>
-                                        </form>
-                                    </div>
-                                    <div class="form_box__bottom">Нажимая на кнопку «Записаться на обучение», вы
-                                        принимаете <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3" target="_blank" >условия
-                                            обработки данных</a></div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="whom__user">
                         <div class="whom__user_name">Светлана Левшина</div>
