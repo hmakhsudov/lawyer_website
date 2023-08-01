@@ -2075,7 +2075,17 @@ a:hover {
 }
 .footer__nav ul li {
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
 }
+
+.footer__nav ul li img{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
 .footer__nav ul li:last-child {
   margin-bottom: 0;
 }
@@ -2083,8 +2093,9 @@ a:hover {
   color: #191919;
   text-decoration: none;
 }
+
 .footer__nav ul li a:hover {
-  color: #ed2818;
+  color: #0109db;
   text-decoration: none;
 }
 .footer__contact {
@@ -2932,7 +2943,7 @@ a:hover {
 @media (min-width: 992px) {
   .whom {
     height: 1260px;
-    background: url("../img/sveta_blur.jpg") 50% 0 no-repeat;
+    background: url("../img/sveta_blur2.jpg") 50% 0 no-repeat;
     background-size: auto auto;
   }
   .whom__row {
