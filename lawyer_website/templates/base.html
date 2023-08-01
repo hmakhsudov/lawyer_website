@@ -231,7 +231,46 @@
 </script>
 
 
-    
+<script>
+    // JavaScript to handle the change event of the select element
+    const selectElement = document.getElementById('course');
+    const totalPriceElement = document.getElementById('totalPrice');
+
+    selectElement.addEventListener('change', () => {
+    // Update the price based on the selected option
+    const selectedOption = selectElement.value;
+    let price = 0;
+    switch (selectedOption) {
+        case 'standart':
+        price = 7500;
+        break;
+        case 'optimal':
+        price = 12000;
+        break;
+        case 'vip':
+        price = 25000;
+        break;
+        case 'individual':
+        price = 11000;
+        break;
+        case 'changejob':
+        price = 9500;
+        break;
+        case 'ki':
+        price = 5000;
+        break;
+        case 'becomepartner':
+        price = 10000;
+        break;
+        default:
+        price = 0;
+    }
+
+    // Update the displayed price
+    totalPriceElement.textContent = price.toLocaleString(); // Format the price with commas
+    });
+
+</script>
     
 
 </body>
