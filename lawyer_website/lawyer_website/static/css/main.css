@@ -4824,49 +4824,106 @@ select {
   font-size: 1.5rem;
 }
 
-.politics__list{
-  list-style: none;
-  padding-left: 0;
+
+@media (min-width: 962px) {
+  .politics__list{
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .politics__list li{
+    margin-bottom: 20px;
+  }
+  
+  .politics__text{
+    font-size: 2.0rem;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .politics__text:hover{
+    color: #0109db;
+  }
+  
+  .politics{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .politics__content{
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  
+  .politics__title{
+    color: #0109db;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  .politics__content ul li{
+    margin-bottom: 25px;
+  }
+  
+  .politics__content img{
+    width: 35px !important;
+    height: 35px !important;
+    margin-right: 8px;
+  }
+  
+   
 }
 
-.politics__list li{
-  margin-bottom: 20px;
+
+@media (min-width: 300px) {
+
+  .politics__list{
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .politics__list li{
+    margin-bottom: 20px;
+  }
+  
+  .politics__text{
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .politics__text:hover{
+    color: #0109db;
+  }
+  
+  .politics{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .politics__content{
+    display: block;
+  }
+  
+  .politics__title{
+    color: #0109db;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  
+  .politics__content ul li{
+    margin-bottom: 25px;
+  }
+  
+  .politics__content img{
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 8px;
+  }
+  
 }
 
-.politics__text{
-  font-size: 2.0rem;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.politics__text:hover{
-  color: #0109db;
-}
-
-.politics{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.politics__content{
-  display: flex;
-  justify-content: space-between;
-}
-
-.politics__title{
-  color: #0109db;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.politics__content ul li{
-  margin-bottom: 25px;
-}
-
-.politics__content img{
-  width: 35px;
-  height: 35px;
-  margin-right: 8px;
-}
