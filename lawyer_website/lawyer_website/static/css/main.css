@@ -4823,3 +4823,22 @@ select {
 .form_box__bottom{
   font-size: 1.5rem;
 }
+
+.politics__list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.politics__list li{
+  margin-bottom: 20px;
+}
+
+.politics__text{
+  font-size: 2.4rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.politics__text:hover{
+  color: #0109db;
+}

@@ -177,12 +177,12 @@
                                                 <input type="hidden" class="frm_tariff" name="tariff" value="unset">
                                                 <div class="form_group">
                                                     <input class="form_control clean_input" type="text" name="name" id="name"
-                                                        placeholder="Введите ваше ФИО">
-                                                </div>
-                                                <div class="form_group mb_35">
+                                                        placeholder="Введите ваше ФИО*">
+                                                </div>                                                <div class="form_group mb_35">
                                                     <input class="form_control clean_input" type="email" name="email" id="email"
                                                         placeholder="Введите вашу почту*">
                                                 </div>
+
                                                 <div class="form_group mb_35">
                                                     <input class="form_control clean_input" type="phone" name="phone" id="phone"
                                                         placeholder="Введите ваш номер*">
@@ -236,7 +236,7 @@
                                 <div class="questions__item">
                                     <div class="questions__item_title">
                                         <i></i>
-                                        <span>Вопросы организации своего кредитного бизнеса</span>
+                                        <span>Вопросы организации своего бизнеса</span>
                                     </div>
                                     <div class="questions__item_text">
                                         <ul>
@@ -817,7 +817,7 @@
                                                 <img src="{% static 'img/team/atnon.jpg' %}" class="img_fluid" alt="">
                                             </div>
                                             <div class="comment__author_content">
-                                                <div class="comment__author_name">Антон Агапов, наставник</div>
+                                                <div class="comment__author_name">Илья Рязанов, наставник</div>
                                                 <div class="comment__author_info">Руководитель отдела наставничества
                                                 </div>
                                             </div>
@@ -869,7 +869,7 @@
                                                     alt="">
                                             </div>
                                             <div class="comment__author_content">
-                                                <div class="comment__author_name">Наталья Дмитриева, куратор </div>
+                                                <div class="comment__author_name">Наталья Некрасова, куратор </div>
                                             </div>
                                         </div>
                                         <div class="comment__title">«Все вложения, получилось окупить за 4 месяца»</div>
@@ -951,22 +951,33 @@
                     <div class="expert__content">
                         <h2>
                             <span>Наш девиз:</span>
-                            <span>Залетайте, обучайтесь, зарабатывайте </span>
+                            <span>Обучайтесь, зарабатывайте </span>
                             <span>и живите с удовольствием!</span>
                         </h2>
                         <div class="expert__subtitle">
                             Только реальные практические<br />
                             знания. Без воды!
                         </div>
-                      
+                      <h2>
+                        Юридические аспекты <br/>
+                        работы с нами:
+                      </h2>
+                      <ul class="politics__list">
+                        <li><a class="politics__text" href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3">Политика в отношении обработки персональных данных</a></li>
+                        <li><a class="politics__text" href="https://telegra.ph/Usloviya-ispolzovaniya-sajta-07-22-2">Условия использования сайта</a></li>
+                        <li><a class="politics__text" href="https://telegra.ph/Pravila-raboty-s-FS-SHkoloj-Kreditnogo-Brokera-07-22">Правила работы с ФС Школой Кредитного Брокера</a></li>
+                        <li><a class="politics__text" href="https://telegra.ph/Pravila-CHata-FS-SHkoly-Kreditnogo-Brokera-07-23">Правила Чата ФС Школы Кредитного Брокера</a></li>
+                        <li><a class="politics__text" href="https://docs.google.com/document/d/160hojoS2Hj2lqD3pty3JGNAw7Z7PsHbNS0-br3i-QK4/edit?usp=sharing">Оферта</a></li>
+                        <li><a class="politics__text" href="https://docs.google.com/document/d/1c8FXSGsIjXH9cJV0SM5ey2Qfrrz4P0lVEk4iBHGCZk4/edit?usp=sharing">Заявление на возврат денежных средств</a></li>
+                      </ul>
+
                     </div>
                     <div class="expert__form">
                         <div class="form_box">
                             <div class="form_box__inner">
                                 <div class="form_box__wrap">
                                     <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                    <div class="form_box__subtitle">чтобы оставить заявку на обратный звонок с
-                                        менеджером</div>
+                                    <div class="form_box__subtitle">чтобы оставить отзыв</div>
                                     <div class="form_box__content">
                                         <form class="form" method="POST" action="{% url 'submit_testi' %}">
                                             {% csrf_token %}
