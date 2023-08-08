@@ -9,9 +9,13 @@
                     </h2>
                     </div>
                     <div class="payment__forms">
-                    <form action="" class="payment__form">
+                    <form action="" class="payment__form" onsubmit="pay(this); return false;">
+                        <input class="payform-tinkoff-row" type="hidden" name="terminalkey" value="TinkoffBankTest">
+                        <input class="payform-tinkoff-row" type="hidden" name="frame" value="true">
+                        <input class="payform-tinkoff-row" type="hidden" name="language" value="ru"> 
+
                         <div class="form__left">
-                        <input type="text" placeholder="Ваше имя" class="form_control clean_input">
+                        <input type="text" placeholder="Ваше ФИО" class="form_control clean_input">
                         <input type="email" placeholder="Ваша почта" class="form_control clean_input">
                         <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" class="form_control clean_input">
                         <select name="course" id="course" class="custom-select">

@@ -37,3 +37,6 @@ def process_form_testimonial(request):
         Testimonial.objects.create(name=name, email=email, phone=phone)
 
     return render(request, 'success.html')
+
+def pay_test(request):
+    return render(request, 'test.html')
