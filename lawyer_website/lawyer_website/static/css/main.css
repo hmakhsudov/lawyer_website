@@ -3717,10 +3717,22 @@ a:hover {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
+.long__btn{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+.price__info2{
+  margin-top: -30px;
+}
 .price__info .price__info-prof{
   margin-left: -40px;
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .price__info .price__info-prof::after{
@@ -4633,17 +4645,42 @@ a:hover {
   margin-bottom: 60px;
 }
 
-.payment__form{
-  display: flex;
+@media (min-width: 300px) {
+  .payment__form{
+    display: block;
+  }
+  .form__left{
+    width: 100%;
+  }
+  .form__right{
+    padding-left: 0px;
+  }
+
+  .form__price{
+    margin-top: 40px;
+  }
 }
 
-.form__left{
-  width: 50%;
+.price_perek{
+
 }
 
-.form__right{
-  padding-left: 50px;
+@media (min-width: 1000px) {
+  .payment__form{
+    display: flex;
+    
+  }
+  .form__left{
+    width: 50%;
+  }
+  .form__right{
+    padding-left: 50px;
+  }
 }
+
+
+
+
 
 
 

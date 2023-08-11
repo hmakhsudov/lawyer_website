@@ -3,156 +3,179 @@
 
 {% block content %}
 
-        <section class="promo" id="promo">
+<section class="promo" id="promo">
 
-            <div class="container">
+    <div class="container">
 
-                <div class="promo__wrap">
-                    <div class="promo__content">
-                        <div class="promo__subtitle">Не знаете как стать кредитным брокером?</div>
-                        <h1 class="promo__title">
-                            <span>Не хватает опыта </span>
-                            <span>и практических знаний </span>
-                            <span>на рынке кредитования?</span>
-                        </h1>
-                        <div class="promo__heading">Всё просто!</div>
-                        <div class="promo__text">
-                            Пройдите фирменный экспресс курс становления кредитным
-                            брокером от ФС Школы кредитного брокера и получите необходимые знания
-                        </div>
-                        <button class="btn_lead btn_scroll" id="scrollToTopBtn" onclick="scrollToSection()"><span>Посмотреть экспресс курсы</span></button>
-                        <div class="promo__arrow">
-                            Только практические знания,<br />
-                            основанные на реальном опыте
-                        </div>
-                    </div>
-
+        <div class="promo__wrap">
+            <div class="promo__content">
+                <div class="promo__subtitle">Не знаете как стать кредитным брокером?</div>
+                <h1 class="promo__title">
+                    <span>Не хватает опыта </span>
+                    <span>и практических знаний </span>
+                    <span>на рынке кредитования?</span>
+                </h1>
+                <div class="promo__heading">Всё просто!</div>
+                <div class="promo__text">
+                    Пройдите фирменный экспресс курс становления кредитным
+                    брокером от ФС Школы кредитного брокера и получите необходимые знания
                 </div>
-                <div class="promo__ring"></div>
-            </div>
-
-            <div class="promo__bg" id="scene3">
-                <div class="bg_item bg_item__01" data-depth="0.6">
-                    <div class="bg_item__wrap">
-               </div>
-                </div>
-                <div class="bg_item bg_item__02" data-depth="0.4">
-                    <div class="bg_item__wrap">
-                    </div>
+                <button class="btn_lead btn_scroll" id="scrollToTopBtn" onclick="scrollToSection()"><span>Посмотреть
+                        экспресс курсы</span></button>
+                <div class="promo__arrow">
+                    Только практические знания,<br />
+                    основанные на реальном опыте
                 </div>
             </div>
-        </section>
 
-        <section class="start" id="start">
-            <div class="container">
-                <div class="start__row">
-                    <div class="start__left">
-                        <h2>
-                            <span>Даже если вы ничего</span>
-                            <span>не понимаете</span>
-                            <span>в финансовых рынках</span>
-                        </h2>
-                        <div class="start__subtitle">после прохождения экспресс курса:</div>
-                        <ul class="start__list">
-                            <li>
-                                <div class="start__list_wrap">
-                                    При должном усердии вы можете стать агентом
-                                </div>
-                            </li>
-                            <li>
-                                <div class="start__list_wrap">
-                                    Вы сможете стать кредитным
-                                    брокером и открыть
-                                    собственный бизнес с нуля
-                                </div>
-                            </li>
-                            <li>
-                                <div class="start__list_wrap">
-                                    Вы получите практические навыки
-                                    и знания, которые сразу начнут
-                                    приносить Вам деньги
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="start__right">
-                        <div class="form_box">
-                            <div class="form_box__inner">
-                                <div class="form_box__wrap">
-                                    <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                    <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
-                                    <div class="form_box__content">
-                                        <form class="form" method="POST" action="{% url 'process_form' %}">
-                                            {% csrf_token %}
-                                            <input type="hidden" class="frm_tariff" name="tariff" value="unset">
-                                            <div class="form_group">
-                                                <input class="form_control clean_input" type="text" name="name" id="name"
-                                                    placeholder="Введите ваше ФИО">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="email" name="email" id="email"
-                                                    placeholder="Введите вашу почту*">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="phone" name="phone" id="phone"
-                                                    placeholder="Введите ваш номер*">
-                                            </div>
-                                            <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>На консультацию</span></button>
-                                        </form>
-                                    </div>
-                                    <div class="form_box__bottom">Нажимая на кнопку «На консультацию» вы
-                                        принимаете <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3" target="_blank">условия
-                                            обработки данных</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class="promo__ring"></div>
+    </div>
+
+    <div class="promo__bg" id="scene3">
+        <div class="bg_item bg_item__01" data-depth="0.6">
+            <div class="bg_item__wrap">
             </div>
-        </section>
-
-        <section class="politics">
-            <div class="container">
-                <div class="politics__title">
-                    <h2>
-                        <span>Юридические аспекты </span>
-                        <span>работы с нами!</span>
-                    </h2>
-                    </div>
-                    <div class="politics__content">
-                        <div class="politics__left">
-                            <ul class="politics__list">
-                                <li> <img style="width: 35px; height: 35px;"src="{% static 'img/bars.png' %}" alt=""><a class="politics__text" href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3">Политика в отношении обработки персональных данных</a></li>
-                                <li><img style="width: 35px; height: 35px;"src="{% static 'img/stats.png' %}" alt=""><a class="politics__text" href="https://telegra.ph/Usloviya-ispolzovaniya-sajta-07-22-2">Условия использования сайта</a></li>
-                                <li><img style="width: 35px; height: 35px;"src="{% static 'img/finance.png' %}" alt=""><a class="politics__text" href="https://telegra.ph/Pravila-raboty-s-FS-SHkoloj-Kreditnogo-Brokera-07-22">Правила работы с ФС Школой Кредитного Брокера</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="politics__right">
-                            <ul class="politics__list">
-                                <li><img style="width: 35px; height: 35px;"src="{% static 'img/team.png' %}" alt=""><a class="politics__text" href="https://telegra.ph/Pravila-CHata-FS-SHkoly-Kreditnogo-Brokera-07-23">Правила Чата ФС Школы Кредитного Брокера</a></li>
-                                <li><img style="width: 35px; height: 35px;"src="{% static 'img/investment.png' %}" alt=""><a class="politics__text" href="https://docs.google.com/document/d/160hojoS2Hj2lqD3pty3JGNAw7Z7PsHbNS0-br3i-QK4/edit?usp=sharing">Оферта</a></li>
-                                <li><img style="width: 35px; height: 35px;"src="{% static 'img/money.png' %}" alt=""><a class="politics__text" href="https://docs.google.com/document/d/1c8FXSGsIjXH9cJV0SM5ey2Qfrrz4P0lVEk4iBHGCZk4/edit?usp=sharing">Заявление на возврат денежных средств</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
+        </div>
+        <div class="bg_item bg_item__02" data-depth="0.4">
+            <div class="bg_item__wrap">
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
-
-        <section class="curse">
-            <div class="container">
+<section class="start" id="start">
+    <div class="container">
+        <div class="start__row">
+            <div class="start__left">
                 <h2>
-                    <span>Мы предоставляем помощь в получении </span>
-                    <span>кредита путем консультации наших клиентов!</span>
+                    <span>Даже если вы ничего</span>
+                    <span>не понимаете</span>
+                    <span>в финансовых рынках</span>
                 </h2>
-                <div class="curse__text">
-                    Наша организация обладает безупречной репутацией и высоким уровнем профессионализма. Как и все
-                    надежные брокеры, оказывающие реальную помощь, мы работаем строго в правовом поле. Обучаем и помогаем разобраться с гаджетами, мессенджерами и приложениями. 
+                <div class="start__subtitle">после прохождения экспресс курса:</div>
+                <ul class="start__list">
+                    <li>
+                        <div class="start__list_wrap">
+                            При должном усердии вы можете стать агентом
+                        </div>
+                    </li>
+                    <li>
+                        <div class="start__list_wrap">
+                            Вы сможете стать кредитным
+                            брокером и открыть
+                            собственный бизнес с нуля
+                        </div>
+                    </li>
+                    <li>
+                        <div class="start__list_wrap">
+                            Вы получите практические навыки
+                            и знания, которые сразу начнут
+                            приносить Вам деньги
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="start__right">
+                <div class="form_box">
+                    <div class="form_box__inner">
+                        <div class="form_box__wrap">
+                            <div class="form_box__title">Заполните <br />короткую форму,</div>
+                            <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
+                            <div class="form_box__content">
+                                <form class="form" method="POST" action="{% url 'process_form' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" class="frm_tariff" name="tariff" value="unset">
+                                    <div class="form_group">
+                                        <input class="form_control clean_input" type="text" name="name" id="name"
+                                            placeholder="Введите ваше ФИО">
+                                    </div>
+                                    <div class="form_group mb_35">
+                                        <input class="form_control clean_input" type="email" name="email" id="email"
+                                            placeholder="Введите вашу почту*">
+                                    </div>
+                                    <div class="form_group mb_35">
+                                        <input class="form_control clean_input" type="phone" name="phone" id="phone"
+                                            placeholder="Введите ваш номер*">
+                                    </div>
+                                    <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>На
+                                            консультацию</span></button>
+                                </form>
+                            </div>
+                            <div class="form_box__bottom">Нажимая на кнопку «На консультацию» вы
+                                принимаете <a
+                                    href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
+                                    target="_blank">условия
+                                    обработки данных</a></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="curse__contentt">
-                    <!-- <div class="curse__content-title">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="politics">
+    <div class="container">
+        <div class="politics__title">
+            <h2>
+                <span>Юридические аспекты </span>
+                <span>работы с нами!</span>
+            </h2>
+        </div>
+        <div class="politics__content">
+            <div class="politics__left">
+                <ul class="politics__list">
+                    <li> <img style="width: 35px; height: 35px;" src="{% static 'img/bars.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3">Политика
+                            в отношении обработки персональных данных</a></li>
+                    <li><img style="width: 35px; height: 35px;" src="{% static 'img/stats.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://telegra.ph/Usloviya-ispolzovaniya-sajta-07-22-2">Условия использования
+                            сайта</a></li>
+                    <li><img style="width: 35px; height: 35px;" src="{% static 'img/finance.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://telegra.ph/Pravila-raboty-s-FS-SHkoloj-Kreditnogo-Brokera-07-22">Правила
+                            работы с ФС Школой Кредитного Брокера</a></li>
+
+                </ul>
+            </div>
+            <div class="politics__right">
+                <ul class="politics__list">
+                    <li><img style="width: 35px; height: 35px;" src="{% static 'img/team.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://telegra.ph/Pravila-CHata-FS-SHkoly-Kreditnogo-Brokera-07-23">Правила Чата ФС
+                            Школы Кредитного Брокера</a></li>
+                    <li><img style="width: 35px; height: 35px;" src="{% static 'img/investment.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://docs.google.com/document/d/160hojoS2Hj2lqD3pty3JGNAw7Z7PsHbNS0-br3i-QK4/edit?usp=sharing">Оферта</a>
+                    </li>
+                    <li><img style="width: 35px; height: 35px;" src="{% static 'img/money.png' %}" alt=""><a
+                            class="politics__text"
+                            href="https://docs.google.com/document/d/1c8FXSGsIjXH9cJV0SM5ey2Qfrrz4P0lVEk4iBHGCZk4/edit?usp=sharing">Заявление
+                            на возврат денежных средств</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="curse">
+    <div class="container">
+        <h2>
+            <span>Мы предоставляем помощь в получении </span>
+            <span>кредита путем консультации наших клиентов!</span>
+        </h2>
+        <div class="curse__text">
+            Наша организация обладает безупречной репутацией и высоким уровнем профессионализма. Как и все
+            надежные брокеры, оказывающие реальную помощь, мы работаем строго в правовом поле. Обучаем и помогаем
+            разобраться с гаджетами, мессенджерами и приложениями.
+        </div>
+        <div class="curse__contentt">
+            <!-- <div class="curse__content-title">
                         Мы поможем, даже если:
                     </div>
                     <div class="curse__list">
@@ -189,407 +212,483 @@
                             </ul>
                         </div>
                     </div> -->
-                    <div class="curse__form">
-                        <div class="curse__form-left"><h2>
-                          Оформите заявку и мы</br>
-                           с вами свяжемся!</br>
-                        </h2></div>
-                        <div class="curse__form-right">
-                            <div class="form_box">
-                                <div class="form_box__inner">
-                                    <div class="form_box__wrap">
-                                        <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                        <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
-                                        <div class="form_box__content">
-                                            <form class="form" method="POST" action="{% url 'process_form' %}">
-                                                {% csrf_token %}
-                                                <input type="hidden" class="frm_tariff" name="tariff" value="unset">
-                                                <div class="form_group">
-                                                    <input class="form_control clean_input" type="text" name="name" id="name"
-                                                        placeholder="Введите ваше ФИО*">
-                                                </div>                                                <div class="form_group mb_35">
-                                                    <input class="form_control clean_input" type="email" name="email" id="email"
-                                                        placeholder="Введите вашу почту*">
-                                                </div>
-
-                                                <div class="form_group mb_35">
-                                                    <input class="form_control clean_input" type="phone" name="phone" id="phone"
-                                                        placeholder="Введите ваш номер*">
-                                                </div>
-                                                <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>На консультацию</span></button>
-                                            </form>
+            <div class="curse__form">
+                <div class="curse__form-left">
+                    <h2>
+                        Оформите заявку и мы</br>
+                        с вами свяжемся!</br>
+                    </h2>
+                </div>
+                <div class="curse__form-right">
+                    <div class="form_box">
+                        <div class="form_box__inner">
+                            <div class="form_box__wrap">
+                                <div class="form_box__title">Заполните <br />короткую форму,</div>
+                                <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
+                                <div class="form_box__content">
+                                    <form class="form" method="POST" action="{% url 'process_form' %}">
+                                        {% csrf_token %}
+                                        <input type="hidden" class="frm_tariff" name="tariff" value="unset">
+                                        <div class="form_group">
+                                            <input class="form_control clean_input" type="text" name="name" id="name"
+                                                placeholder="Введите ваше ФИО*">
                                         </div>
-                                        <div class="form_box__bottom">Нажимая на кнопку «На консультацию» вы
-                                            принимаете <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"  target="_blank">условия
-                                                обработки данных</a></div>
-                                    </div>
+                                        <div class="form_group mb_35">
+                                            <input class="form_control clean_input" type="email" name="email" id="email"
+                                                placeholder="Введите вашу почту*">
+                                        </div>
+
+                                        <div class="form_group mb_35">
+                                            <input class="form_control clean_input" type="phone" name="phone" id="phone"
+                                                placeholder="Введите ваш номер*">
+                                        </div>
+                                        <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>На
+                                                консультацию</span></button>
+                                    </form>
                                 </div>
+                                <div class="form_box__bottom">Нажимая на кнопку «На консультацию» вы
+                                    принимаете <a
+                                        href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
+                                        target="_blank">условия
+                                        обработки данных</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 
 
 
 
 
-        <section class="questions">
-            <div class="container">
-                <div class="questions__row">
-                    <div class="questions__content">
-                        <h2>
-                            <span>Вопросы, на которые </span>
-                            <span>вы получите ответы</span>
-                        </h2>
-                        <div class="questions__subtitle">после прохождения экспресс курса:</div>
-                        <div class="questions__list">
-                            <div class="questions__list_col">
-                                <div class="questions__item">
-                                    <div class="questions__item_title">
-                                        <i></i>
-                                        <span>Вопросы работы финансового рынка</span>
-                                    </div>
-                                    <div class="questions__item_text">
-                                        <ul>
-                                            <li>Как работает кредитный рынок?</li>
-                                            <li>Какие основные и доп. продукты кредитного рынка?</li>
-                                            <li>Чем заниматься наиболее выгодно?</li>
-                                            <li>Что влияет на ставку?</li>
-                                            <li>Как работает залоговое кредитование?</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="questions__item">
-                                    <div class="questions__item_title">
-                                        <i></i>
-                                        <span>Вопросы организации своего бизнеса</span>
-                                    </div>
-                                    <div class="questions__item_text">
-                                        <ul>
-                                            <li>Как открыть своего кредитного брокера, подобрать команду, организовать
-                                                систему оплаты и ценовую политику?</li>
-                                            <li>Как понять, когда менеджер работает хорошо, а когда плохо?</li>
-                                            <li>Какие негласные правила у кредитного бизнеса?</li>
-                                        </ul>
-                                    </div>
-                                </div>
+<section class="questions">
+    <div class="container">
+        <div class="questions__row">
+            <div class="questions__content">
+                <h2>
+                    <span>Вопросы, на которые </span>
+                    <span>вы получите ответы</span>
+                </h2>
+                <div class="questions__subtitle">после прохождения экспресс курса:</div>
+                <div class="questions__list">
+                    <div class="questions__list_col">
+                        <div class="questions__item">
+                            <div class="questions__item_title">
+                                <i></i>
+                                <span>Вопросы работы финансового рынка</span>
                             </div>
-                            <div class="questions__list_col">
-                                <div class="questions__item">
-                                    <div class="questions__item_title">
-                                        <i></i>
-                                        <span>Вопросы работы кредитным экспертом</span>
-                                    </div>
-                                    <div class="questions__item_text">
-                                        <ul>
-                                            <li>Как работает кредитный эксперт?</li>
-                                            <li>Какие задачи решает кредитный эксперт?</li>
-                                            <li>Как работает кредитный брокер?</li>
-                                            <li>Как работать с кредитной историей?</li>
-                                            <li>Как проводить анализ КИ?</li>
-                                            <li>Как кредитовать бизнес?</li>
-                                            <li>Какие существуют особенности и подводные камни по проведению сделок и
-                                                проверке клиента?</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="questions__item">
-                                    <div class="questions__item_title">
-                                        <i></i>
-                                        <span>Вопросы работы с клиентами</span>
-                                    </div>
-                                    <div class="questions__item_text">
-                                        <ul>
-                                            <li>Почему клиентам нужна помощь в получении кредита?</li>
-                                            <li>Как разговаривать с клиентами, желающими взять кредит?</li>
-                                            <li>Как вызвать доверие у клиента?</li>
-                                            <li>8 каналов откуда приходят клиенты и где их взять?</li>
-                                            <li>Как правильно проводить встречи с клиентами и подписание договора?</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="questions__item">
-                                    <div class="questions__item_title">
-                                        <i></i>
-                                        <span>Вопросы работы с кредитными партнёрами</span>
-                                    </div>
-                                    <div class="questions__item_text">
-                                        <ul>
-                                            <li>Где искать своих бизнес-партнёров?</li>
-                                            <li>Как принимает решение банк?</li>
-                                            <li>Какие требования у банка к клиенту?</li>
-                                            <li>Что такое скоринг и как это работает?</li>
-                                            <li>Как работать с частными инвесторами?</li>
-                                            <li>Кто такой кредитный донор?</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <div class="questions__item_text">
+                                <ul>
+                                    <li>Как работает кредитный рынок?</li>
+                                    <li>Какие основные и доп. продукты кредитного рынка?</li>
+                                    <li>Чем заниматься наиболее выгодно?</li>
+                                    <li>Что влияет на ставку?</li>
+                                    <li>Как работает залоговое кредитование?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__item_title">
+                                <i></i>
+                                <span>Вопросы организации своего бизнеса</span>
+                            </div>
+                            <div class="questions__item_text">
+                                <ul>
+                                    <li>Как открыть своего кредитного брокера, подобрать команду, организовать
+                                        систему оплаты и ценовую политику?</li>
+                                    <li>Как понять, когда менеджер работает хорошо, а когда плохо?</li>
+                                    <li>Какие негласные правила у кредитного бизнеса?</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="questions__image">
-                        <div class="questions__image_wrap" id="scene1">
-                            <div class="questions__image_main" data-depth="0.4">
-                                <img src="{% static 'img/questions__image.png' %}" class="img_fluid" alt="">
+                    <div class="questions__list_col">
+                        <div class="questions__item">
+                            <div class="questions__item_title">
+                                <i></i>
+                                <span>Вопросы работы кредитным экспертом</span>
                             </div>
-                            <div class="questions__image_point">
-                                <img src="{% static 'img/questions__point.png' %}" class="img_fluid" alt="">
+                            <div class="questions__item_text">
+                                <ul>
+                                    <li>Как работает кредитный эксперт?</li>
+                                    <li>Какие задачи решает кредитный эксперт?</li>
+                                    <li>Как работает кредитный брокер?</li>
+                                    <li>Как работать с кредитной историей?</li>
+                                    <li>Как проводить анализ КИ?</li>
+                                    <li>Как кредитовать бизнес?</li>
+                                    <li>Какие существуют особенности и подводные камни по проведению сделок и
+                                        проверке клиента?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__item_title">
+                                <i></i>
+                                <span>Вопросы работы с клиентами</span>
+                            </div>
+                            <div class="questions__item_text">
+                                <ul>
+                                    <li>Почему клиентам нужна помощь в получении кредита?</li>
+                                    <li>Как разговаривать с клиентами, желающими взять кредит?</li>
+                                    <li>Как вызвать доверие у клиента?</li>
+                                    <li>8 каналов откуда приходят клиенты и где их взять?</li>
+                                    <li>Как правильно проводить встречи с клиентами и подписание договора?</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <div class="questions__item_title">
+                                <i></i>
+                                <span>Вопросы работы с кредитными партнёрами</span>
+                            </div>
+                            <div class="questions__item_text">
+                                <ul>
+                                    <li>Где искать своих бизнес-партнёров?</li>
+                                    <li>Как принимает решение банк?</li>
+                                    <li>Какие требования у банка к клиенту?</li>
+                                    <li>Что такое скоринг и как это работает?</li>
+                                    <li>Как работать с частными инвесторами?</li>
+                                    <li>Кто такой кредитный донор?</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-        <section class="cost" id="scrollToSection">
-
-            <div class="cost__header">
-                <div class="container">
-                    <div class="cost__header_content">
-                        <h2>Стоимость обучения</h2>
-                        <div class="cost__header_subtitle">
-                            <span>Приятный бонус: </span>
-                            <span>При выходе на работу в нашу команду  с первой сделки оплата вознаграждения плюс возврат стоимости экспресс курса</span>
-                        </div>
+            <div class="questions__image">
+                <div class="questions__image_wrap" id="scene1">
+                    <div class="questions__image_main" data-depth="0.4">
+                        <img src="{% static 'img/questions__image.png' %}" class="img_fluid" alt="">
+                    </div>
+                    <div class="questions__image_point">
+                        <img src="{% static 'img/questions__point.png' %}" class="img_fluid" alt="">
                     </div>
                 </div>
             </div>
-            <div class="cost__content">
-                <div class="container">
-                    <ul class="cost__block">
-                        <li>
-                            <div class="price price_standard">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Экспресс Курс</div>
-                                        <div class="price__title">Стандарт</div>
-                                        <div class="price__intro">Онлайн встреча на сессию с наставником  
-                                        </div>
-                                        <ul class="price__info">
-                                            <li>однодневный</li>
-                                            <li>обучение корректной работе с приложениями в мессенджерах и с гаджетами</li>
-                                            <li>разбор проектов договоров, приложений и актов</li>
-                                            <li>разбор скриптов </li>
-                                            <li>инструкция по ведению сделок </li>
-                                            <li>разбор кейсов</li>
-                                            <li>разбор КИ слушателя, оптимизации</li>
-                                            <li>продолжительность 145 мин </li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>7 500</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="Стандарт"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="price price_optimal">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Экспресс курс</div>
-                                        <div class="price__title">Оптимал</div>
-                                        <div class="price__intro">Онлайн встреча с наставником + практические занятия 
-                                        </div>
-                                        <ul class="price__info mb_50">
-                                            <li>двухдневный</li>
-                                            <li>продолжительность 350 минут</li>
-                                            <li>все, что входит в пакет Стандарт</li>
-                                            <li>Блок советов по проведению встреч с клиентом </li>
-                                            <li>отработка навыков в игровом формате </li>
-                                            <li>предоставление текстовых материалов</li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>12 000</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="price price_vip">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Экспресс курс</div>
-                                        <div class="price__title">VIP</div>
-                                        <div class="price__intro">Личное обучение от руководителей по фирменной
-                                            программе</div>
-                                        <ul class="price__info">
-                                            <li>трехдневный </li>
-                                            <li>продолжительность 480 минут</li>
-                                            <li>все, что входит в пакет Оптимал</li>
-                                            <li>Индивидуальные сессии в кругу 3-4 слушателей</li>
-                                            <li>выдача решений по КИ</li>
-                                            <li>отработка потенциала карьерного роста  </li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>25 000</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="VIP"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+        </div>
+    </div>
+</section>
 
-                    </ul>
-                    <ul class="cost__block block2">
-                        <li>
-                            <div class="price price_standard">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Тариф на обучение</div>
-                                        <div class="price__title">Индивидуально</div>
-                                        <div class="price__intro">
-                                            Лично проводимое наставником индивидуальная сессия - только Вы и Вами
-                                            приглашённые люди.
-                                        </div>
-                                        <ul class="price__info">
-                                            <li>все, что входит в пакет Стандарт</li>
-                                            <li>отработка навыков в игровом формате </li>
-                                            <li>предоставление текстовых материалов</li>
-                                            <li>разбор личных КИ</li>
-                                            <li>разбор сложных случаев на реальных примерах</li>
-                                            <li>продолжительность 120 мин</li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>11 000</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="Стандарт"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="price price_optimal">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Тариф на обучение</div>
-                                        <div class="price__title">Оптимизация КИ</div>
-                                        <div class="price__intro">Лично проводимую куратором индивидуальная сессия - только
-                                            Вы и Вами приглашённые люди. </div>
-                                        <ul class="price__info mb_50">
-                                            <li>анализ исходных документов и и консультации по их пакетированию</li>
-                                            <li>отработка комфортных финансовых условий по сделке </li>
-                                            <li>предоставление проекта договора, приложений, актов сдачи приема</li>
-                                            <li>разбор личных КИ</li>
-                                            <li>разбор сложных случаев на реальных примерах</li>
-                                            <li>продолжительность 90 мин</li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>5 000</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="Оптимал"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="price price_vip">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Тариф на обучение</div>
-                                        <div class="price__title" style="font-size: 2.3rem;">Переквалификация</div>
-                                        <div class="price__intro">Предоставление нужных знаний и навыков для
-                                            Переквалификации. Если вы:</div>
-                                        <ul class="price__info">
-                                            <li class="price__info-prof">Риэлтер</li>
-                                            <li class="price__info-prof">Страховщик </li>
-                                            <li class="price__info-prof">Специалист по лизингам</li>
-                                            <li class="price__info-prof">Специалист из банковской сферы,</li>
-                                            <li class="price__info-prof">то вам актуально:</li>
 
-                                            <li>обучение анализу исходных документов и их аналитика </li>
-                                            <li>отработка комфортных финансовых условий внутри сложной сделки </li>
-                                            <li>построение взаимоотношений внутри напряженных секторов рынка</li>
-                                            <li>обмен навыками и практическими знаниями для увеличения ассортимента услуг</li>
-                                            <li>проведение совместных вебинаров и веб-конференций</li>
-                                            <li>продолжительность 90 мин </li>
-                                        </ul>
 
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>9 500</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="VIP"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+<section class="cost" id="scrollToSection">
 
-                    </ul>
-                    <ul class="cost__block block2">
-
-                        <li style="margin: 0 auto;">
-                            <div class="price price_optimal">
-                                <div class="price__box">
-                                    <div class="price__wrap">
-                                        <div class="price__subtitle">Тариф на обучение</div>
-                                        <div class="price__title">Стать Партнером</div>
-                                        <div class="price__intro">Лично проводимое основателем школы индивидуальное занятие - только Вам.  </div>
-                                        <ul class="price__info mb_50">
-                                            <li>определяем условия возможного сотрудничества </li>
-                                            <li>отработка навыков в игровом формате </li>
-                                            <li> предоставление текстовых материалов </li>
-                                            <li> предоставление проектов юридических договоров, приложений, актов</li>
-                                            <li>продолжительность 90 мин </li>
-                                        </ul>
-                                        <div class="price__value">
-                                            <span>Всего </span>
-                                            <strong>10 000</strong>
-                                            <sub> руб</sub>
-                                        </div>
-                                        <div class="text_center">
-                                            <a href="{% url 'pay_info' %}" class="btn "
-                                                data-target="Оптимал"><span>Перейти к оплате</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
+    <div class="cost__header">
+        <div class="container">
+            <div class="cost__header_content">
+                <h2>Стоимость обучения</h2>
+                <div class="cost__header_subtitle">
+                    <span>Приятный бонус: </span>
+                    <span>При выходе на работу в нашу команду с первой сделки оплата вознаграждения плюс возврат
+                        стоимости экспресс курса</span>
                 </div>
-                <div class="cost__stamp" id="scene2">
-                    <div class="cost__stamp_wrap" data-depth="0.4"></div>
-                </div>
-                <div class="cost__plant"></div>
             </div>
+        </div>
+    </div>
+    <div class="cost__content">
+        <div class="container">
+            <ul class="cost__block">
+                <li>
+                    <div class="price price_standard">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Экспресс Курс</div>
+                                <div class="price__title">Стандарт</div>
+                                <div class="price__intro">Онлайн встреча на сессию с наставником
+                                </div>
+                                <ul class="price__info">
+                                    <li>однодневный</li>
+                                    <li>обучение корректной работе с приложениями в мессенджерах и с гаджетами</li>
+                                    <li>разбор проектов договоров, приложений и актов</li>
+                                    <li>разбор скриптов </li>
+                                    <li>инструкция по ведению сделок </li>
+                                    <li>разбор кейсов</li>
+                                    <li>разбор КИ слушателя, оптимизации</li>
+                                    <li>продолжительность 145 мин </li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>7 500</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Стандарт"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Экспресс курс</div>
+                                <div class="price__title">Оптимал</div>
+                                <div class="price__intro">Онлайн встреча с наставником + практические занятия
+                                </div>
+                                <ul class="price__info mb_50">
+                                    <li>двухдневный</li>
+                                    <li>продолжительность 350 минут</li>
+                                    <li>все, что входит в пакет Стандарт</li>
+                                    <li>Блок советов по проведению встреч с клиентом </li>
+                                    <li>отработка навыков в игровом формате </li>
+                                    <li>предоставление текстовых материалов</li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>12 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn "><span>Перейти к оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_vip">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Экспресс курс</div>
+                                <div class="price__title">VIP</div>
+                                <div class="price__intro">Личное обучение от руководителей по фирменной
+                                    программе</div>
+                                <ul class="price__info">
+                                    <li>трехдневный </li>
+                                    <li>продолжительность 480 минут</li>
+                                    <li>все, что входит в пакет Оптимал</li>
+                                    <li>Индивидуальные сессии в кругу 3-4 слушателей</li>
+                                    <li>выдача решений по КИ</li>
+                                    <li>отработка потенциала карьерного роста </li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>25 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
 
-        </section>
+            </ul>
+            <ul class="cost__block block2">
+                <li>
+                    <div class="price price_standard">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title">Индивидуально</div>
+                                <div class="price__intro">
+                                    Лично проводимое наставником индивидуальная сессия - только Вы и Вами
+                                    приглашённые люди.
+                                </div>
+                                <ul class="price__info">
+                                    <li>все, что входит в пакет Стандарт</li>
+                                    <li>отработка навыков в игровом формате </li>
+                                    <li>предоставление текстовых материалов</li>
+                                    <li>разбор личных КИ</li>
+                                    <li>разбор сложных случаев на реальных примерах</li>
+                                    <li>продолжительность 120 мин</li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>11 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Стандарт"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title">Оптимизация КИ</div>
+                                <div class="price__intro">Лично проводимую куратором индивидуальная сессия - только
+                                    Вы и Вами приглашённые люди. </div>
+                                <ul class="price__info mb_50">
+                                    <li>анализ исходных документов и и консультации по их пакетированию</li>
+                                    <li>отработка комфортных финансовых условий по сделке </li>
+                                    <li>предоставление проекта договора, приложений, актов сдачи приема</li>
+                                    <li>разбор личных КИ</li>
+                                    <li>разбор сложных случаев на реальных примерах</li>
+                                    <li>продолжительность 90 мин</li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>5 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_vip price_perek">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title" style="font-size: 2.3rem;">Переквалификация</div>
+                                <div class="price__intro">Предоставление нужных знаний и навыков для
+                                    Переквалификации. Если вы:</div>
+                                <ul class="price__info price__info2">
+                                    <li class="price__info-prof">Риэлтер</li>
+                                    <li class="price__info-prof">Страховщик </li>
+                                    <li class="price__info-prof">Специалист по лизингам</li>
+                                    <li class="price__info-prof">Специалист из банковской сферы,</li>
+                                    <li class="price__info-prof">то вам актуально:</li>
+
+                                    <li>обучение анализу исходных документов и их аналитика </li>
+                                    <li>отработка комфортных финансовых условий внутри сложной сделки </li>
+                                    <li>построение взаимоотношений внутри напряженных секторов рынка</li>
+                                    <li>обмен навыками и практическими знаниями для увеличения ассортимента услуг</li>
+                                    <li>проведение совместных вебинаров и веб-конференций</li>
+                                    <li>продолжительность 90 мин </li>
+                                </ul>
+
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>9 500</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="cost__block block2">
+                <li style="margin: 0 auto;">
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title">Стать Партнером</div>
+                                <div class="price__intro">Лично проводимое основателем школы индивидуальное занятие -
+                                    только Вам. </div>
+                                <ul class="price__info mb_50">
+                                    <li>определяем условия возможного сотрудничества </li>
+                                    <li>отработка навыков в игровом формате </li>
+                                    <li> предоставление текстовых материалов </li>
+                                    <li> предоставление проектов юридических договоров, приложений, актов</li>
+                                    <li>продолжительность 90 мин </li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>10 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title">Оптимизация КИ</div>
+                                <div class="price__intro">Лично проводимую куратором индивидуальная сессия - только
+                                    Вы и Вами приглашённые люди. </div>
+                                <ul class="price__info mb_50">
+                                    <li>анализ исходных документов и и консультации по их пакетированию</li>
+                                    <li>отработка комфортных финансовых условий по сделке </li>
+                                    <li>предоставление проекта договора, приложений, актов сдачи приема</li>
+                                    <li>разбор личных КИ</li>
+                                    <li>разбор сложных случаев на реальных примерах</li>
+                                    <li>продолжительность 90 мин</li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>5 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="price price_vip">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__title" style="font-size: 2.3rem;">Переквалификация</div>
+                                <div class="price__intro">Предоставление нужных знаний и навыков для
+                                    Переквалификации. Если вы:</div>
+                                <ul class="price__info">
+                                    <li class="price__info-prof">Риэлтер</li>
+                                    <li class="price__info-prof">Страховщик </li>
+                                    <li class="price__info-prof">Специалист по лизингам</li>
+                                    <li class="price__info-prof">Специалист из банковской сферы,</li>
+                                    <li class="price__info-prof">то вам актуально:</li>
+
+                                    <li>обучение анализу исходных документов и их аналитика </li>
+                                    <li>отработка комфортных финансовых условий внутри сложной сделки </li>
+                                    <li>построение взаимоотношений внутри напряженных секторов рынка</li>
+                                    <li>обмен навыками и практическими знаниями для увеличения ассортимента услуг</li>
+                                    <li>проведение совместных вебинаров и веб-конференций</li>
+                                    <li>продолжительность 90 мин </li>
+                                </ul>
+
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>9 500</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+            <div class="btn long__btn btn_shadow">
+                Упакуем ваш сайт под ключ для вашего бизнеса
+            </div>
+        </div>
+        <div class="cost__stamp" id="scene2">
+            <div class="cost__stamp_wrap" data-depth="0.4"></div>
+        </div>
+        <div class="cost__plant"></div>
+    </div>
+
+</section>
 <!-- 
         <section class="whom" id="whom">
             <div class="container">
@@ -648,164 +747,166 @@
             </div>
         </section> -->
 
-        <section class="comments">
-            <div class="container">
-                <h2>
-                    Благодарности тех,<br />
-                    кто уже прошли обучение
-                </h2>
-                <div class="comments__subtitle">по фирменной программе</div>
+<section class="comments">
+    <div class="container">
+        <h2>
+            Благодарности тех,<br />
+            кто уже прошли обучение
+        </h2>
+        <div class="comments__subtitle">по фирменной программе</div>
 
-                <div class="comments__inner">
-                    <div class="comments__slider swiper-container">
-                        <div class="swiper-wrapper">
+        <div class="comments__inner">
+            <div class="comments__slider swiper-container">
+                <div class="swiper-wrapper">
 
-                            <div class="swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__wrap">
-                                        <div class="comment__author">
-                                            <div class="comment__author_avatar">
-                                                <img src="{% static 'img/reviews/01.jpeg' %}" class="img_fluid" alt="">
-                                            </div>
-                                            <div class="comment__author_content">
-                                                <div class="comment__author_name">Евгений Красовский</div>
-                                                <div class="comment__author_info">Основатель кредитного брокера в городе
-                                                    Томск</div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__title">«Другой взгляд на банковскую систему позволил уже
-                                            через 2 недели одобрить клиента и заработать первые деньги»</div>
-                                        <div class="comment__text">После обучения понял, что даже если ты работаешь в
-                                            банке, то это ещё не значит, что соображаешь в брокеридже. Начал смотреть на
-                                            всю банковскую систему с совсем другой стороны, узнал очень много фишек,
-                                            которые в банке тебе не расскажут. Благодаря обучению, я быстро набрал
-                                            необходимую экспертность и закрыл первую сделку уже через 2 недели после
-                                            запуска офиса.</div>
-                                        <div class="text_center">
-                                        </div>
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment__wrap">
+                                <div class="comment__author">
+                                    <div class="comment__author_avatar">
+                                        <img src="{% static 'img/reviews/01.jpeg' %}" class="img_fluid" alt="">
+                                    </div>
+                                    <div class="comment__author_content">
+                                        <div class="comment__author_name">Евгений Красовский</div>
+                                        <div class="comment__author_info">Основатель кредитного брокера в городе
+                                            Томск</div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__wrap">
-                                        <div class="comment__author">
-                                            <div class="comment__author_avatar">
-                                                <img src="{% static 'img/reviews/02.jpeg' %}" class="img_fluid" alt="">
-                                            </div>
-                                            <div class="comment__author_content">
-                                                <div class="comment__author_name">Наталья Копшева</div>
-                                                <div class="comment__author_info">Руководитель ипотечного отдела в
-                                                    агентстве элитной недвижимости</div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__title">«За первый месяц обучения практических знаний
-                                            получила в несколько раз больше, чем за 5 лет в институте»</div>
-                                        <div class="comment__text">«Проходила обучение по программе «ФС Школа Кредитного Брокера». Сам в институте 5 лет учился, получил банковское образование, и
-                                            за первый месяц обучения практических знаний получил в несколько раз больше,
-                                            чем за всё время обучения в институте. Очень много практических «фишек»,
-                                            которые применяются на практике сразу без воды. Очень доволен. Каждая идея
-                                            сразу приносит деньги».</div>
-                                        <div class="text_center">
-                                        </div>
-                                    </div>
+                                <div class="comment__title">«Другой взгляд на банковскую систему позволил уже
+                                    через 2 недели одобрить клиента и заработать первые деньги»</div>
+                                <div class="comment__text">После обучения понял, что даже если ты работаешь в
+                                    банке, то это ещё не значит, что соображаешь в брокеридже. Начал смотреть на
+                                    всю банковскую систему с совсем другой стороны, узнал очень много фишек,
+                                    которые в банке тебе не расскажут. Благодаря обучению, я быстро набрал
+                                    необходимую экспертность и закрыл первую сделку уже через 2 недели после
+                                    запуска офиса.</div>
+                                <div class="text_center">
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__wrap">
-                                        <div class="comment__author">
-                                            <div class="comment__author_avatar">
-                                                <img src="{% static 'img/reviews/03.jpeg' %}" class="img_fluid"
-                                                    alt="">
-                                            </div>
-                                            <div class="comment__author_content">
-                                                <div class="comment__author_name">Николай Володин</div>
-                                                <div class="comment__author_info">Руководитель агентства недвижимости
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__title">«Мои сотрудники теперь обладают большей
-                                            компетенцией, чем сотрудники банков»</div>
-                                        <div class="comment__text">«После прохождения обучения по программе «ФС Школа Кредитного Брокера» координально изменилось понимание рынка изнутри и банковской
-                                            сферы. И уже наши действия начали приносить гораздо больше дохода. Мои
-                                            финансовые консультанты на данный момент обладают большей компетенцией, чем
-                                            сотрудники банков. И это позволяет вести бизнес на новом уровне».</div>
-                                        <div class="text_center">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__wrap">
-                                        <div class="comment__author">
-                                            <div class="comment__author_avatar">
-                                                <img src="{% static 'img/reviews/04.jpeg' %}" class="img_fluid"
-                                                    alt="">
-                                            </div>
-                                            <div class="comment__author_content">
-                                                <div class="comment__author_name">Илья Ромашкин</div>
-                                                <div class="comment__author_info">Основатель кредитного брокера в городе
-                                                    Ставрополь</div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__title">«Все вложения, получилось окупить за 4 месяца»</div>
-                                        <div class="comment__text">
-                                            «До брокериджа, в основном, занимался продажами в различных финансовых
-                                            компаниях. В один момент понял, что на найме много денег не заработать и
-                                            решил открыть своё дело.
-                                            Выбрав направление кредитного брокера, перешел к поиску обучения. Оценив все
-                                            отзывы, информацию, стоимость, пришел к компании «ФС Школа Кредитного Брокера». Решил долго не тянуть и спустя неделю плотного общения с
-                                            представителем компании, в канун нового года, подписал договор.
-                                            Все вложения, получилось окупить за 4 месяца. Сейчас в основном работаю с
-                                            юридическими лицами, поток большой, все идут по рекомендации, получил очень
-                                            много полезных знакомств».</div>
-                                        <div class="text_center" style="display: none;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="comment">
-                                    <div class="comment__wrap">
-                                        <div class="comment__author">
-                                            <div class="comment__author_avatar">
-                                                <img src="{% static 'img/reviews/05.jpeg' %}" class="img_fluid" alt="">
-                                            </div>
-                                            <div class="comment__author_content">
-                                                <div class="comment__author_name">Виктория Колдышкина</div>
-                                                <div class="comment__author_info">Основательница кредитного брокера в городе
-                                                    Тула</div>
-                                            </div>
-                                        </div>
-                                        <div class="comment__title">«Успешно работаем в этой сфере благодаря экспресс курсу»</div>
-                                        <div class="comment__text">
-                                            «Проработав 2 года в банковской сфере, и как-то пообщавшись с коллегой
-                                            решили, что пора начать работать на себя. Логично, что приоритетным
-                                            направлением для нас был брокеридж.
-                                            Ознакомившись в интернете с ФС Школой Кредитного Брокера, решили приобрести
-                                            обучение. В итоге успешно работаем в этой сфере целый год».</div>
-                                        <div class="text_center" style="display: none;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                    <span class="comments__nav comments__nav_prev"></span>
-                    <span class="comments__nav comments__nav_next"></span>
-                </div>
 
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment__wrap">
+                                <div class="comment__author">
+                                    <div class="comment__author_avatar">
+                                        <img src="{% static 'img/reviews/02.jpeg' %}" class="img_fluid" alt="">
+                                    </div>
+                                    <div class="comment__author_content">
+                                        <div class="comment__author_name">Наталья Копшева</div>
+                                        <div class="comment__author_info">Руководитель ипотечного отдела в
+                                            агентстве элитной недвижимости</div>
+                                    </div>
+                                </div>
+                                <div class="comment__title">«За первый месяц обучения практических знаний
+                                    получила в несколько раз больше, чем за 5 лет в институте»</div>
+                                <div class="comment__text">«Проходила обучение по программе «ФС Школа Кредитного
+                                    Брокера». Сам в институте 5 лет учился, получил банковское образование, и
+                                    за первый месяц обучения практических знаний получил в несколько раз больше,
+                                    чем за всё время обучения в институте. Очень много практических «фишек»,
+                                    которые применяются на практике сразу без воды. Очень доволен. Каждая идея
+                                    сразу приносит деньги».</div>
+                                <div class="text_center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment__wrap">
+                                <div class="comment__author">
+                                    <div class="comment__author_avatar">
+                                        <img src="{% static 'img/reviews/03.jpeg' %}" class="img_fluid" alt="">
+                                    </div>
+                                    <div class="comment__author_content">
+                                        <div class="comment__author_name">Николай Володин</div>
+                                        <div class="comment__author_info">Руководитель агентства недвижимости
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment__title">«Мои сотрудники теперь обладают большей
+                                    компетенцией, чем сотрудники банков»</div>
+                                <div class="comment__text">«После прохождения обучения по программе «ФС Школа Кредитного
+                                    Брокера» координально изменилось понимание рынка изнутри и банковской
+                                    сферы. И уже наши действия начали приносить гораздо больше дохода. Мои
+                                    финансовые консультанты на данный момент обладают большей компетенцией, чем
+                                    сотрудники банков. И это позволяет вести бизнес на новом уровне».</div>
+                                <div class="text_center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment__wrap">
+                                <div class="comment__author">
+                                    <div class="comment__author_avatar">
+                                        <img src="{% static 'img/reviews/04.jpeg' %}" class="img_fluid" alt="">
+                                    </div>
+                                    <div class="comment__author_content">
+                                        <div class="comment__author_name">Илья Ромашкин</div>
+                                        <div class="comment__author_info">Основатель кредитного брокера в городе
+                                            Ставрополь</div>
+                                    </div>
+                                </div>
+                                <div class="comment__title">«Все вложения, получилось окупить за 4 месяца»</div>
+                                <div class="comment__text">
+                                    «До брокериджа, в основном, занимался продажами в различных финансовых
+                                    компаниях. В один момент понял, что на найме много денег не заработать и
+                                    решил открыть своё дело.
+                                    Выбрав направление кредитного брокера, перешел к поиску обучения. Оценив все
+                                    отзывы, информацию, стоимость, пришел к компании «ФС Школа Кредитного Брокера».
+                                    Решил долго не тянуть и спустя неделю плотного общения с
+                                    представителем компании, в канун нового года, подписал договор.
+                                    Все вложения, получилось окупить за 4 месяца. Сейчас в основном работаю с
+                                    юридическими лицами, поток большой, все идут по рекомендации, получил очень
+                                    много полезных знакомств».</div>
+                                <div class="text_center" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment__wrap">
+                                <div class="comment__author">
+                                    <div class="comment__author_avatar">
+                                        <img src="{% static 'img/reviews/05.jpeg' %}" class="img_fluid" alt="">
+                                    </div>
+                                    <div class="comment__author_content">
+                                        <div class="comment__author_name">Виктория Колдышкина</div>
+                                        <div class="comment__author_info">Основательница кредитного брокера в городе
+                                            Тула</div>
+                                    </div>
+                                </div>
+                                <div class="comment__title">«Успешно работаем в этой сфере благодаря экспресс курсу»
+                                </div>
+                                <div class="comment__text">
+                                    «Проработав 2 года в банковской сфере, и как-то пообщавшись с коллегой
+                                    решили, что пора начать работать на себя. Логично, что приоритетным
+                                    направлением для нас был брокеридж.
+                                    Ознакомившись в интернете с ФС Школой Кредитного Брокера, решили приобрести
+                                    обучение. В итоге успешно работаем в этой сфере целый год».</div>
+                                <div class="text_center" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </section>
-        <!-- <section class="comments comments-2">
+            <span class="comments__nav comments__nav_prev"></span>
+            <span class="comments__nav comments__nav_next"></span>
+        </div>
+
+    </div>
+</section>
+<!-- <section class="comments comments-2">
             <div class="container">
                 <h2>
                     Кураторы и Наставники<br />
@@ -960,83 +1061,83 @@
         </section> -->
 
 
-        <section class="partners">
-            <div class="container">
-                <div class="partners__heading">
-                    <span>Экспресс курсы основаны на опыте работы </span>
-                    <span>с крупнейшими банками страны</span>
-                </div>
-                <ul class="partners__content">
-                    <li><i><img src="{% static 'img/logo/logo__01.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__05.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__03.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__04.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__02.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__06.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__07.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__08.png' %}" class="img_fluid" alt=""></i></li>
-                    <li><i><img src="{% static 'img/logo/logo__09.png' %}" class="img_fluid" alt=""></i></li>
-                </ul>
-            </div>
-        </section>
+<section class="partners">
+    <div class="container">
+        <div class="partners__heading">
+            <span>Экспресс курсы основаны на опыте работы </span>
+            <span>с крупнейшими банками страны</span>
+        </div>
+        <ul class="partners__content">
+            <li><i><img src="{% static 'img/logo/logo__01.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__05.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__03.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/tink.svg' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__02.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__06.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__07.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__08.png' %}" class="img_fluid" alt=""></i></li>
+            <li><i><img src="{% static 'img/logo/logo__09.png' %}" class="img_fluid" alt=""></i></li>
+        </ul>
+    </div>
+</section>
 
-        <section class="expert">
-            <div class="container">
-                <div class="expert__row">
-                    <div class="expert__content">
-                        <h2>
-                            <span>Наш девиз:</span>
-                            <span>Приходите, Обучайтесь, Зарабатывайте </span>
-                            <span>и живите с удовольствием!</span>
-                        </h2>
-                        <div class="expert__subtitle">
-                            Только реальные практические<br />
-                            знания. Без воды!
-                        </div>
-                    </div>
-                    <div class="expert__form">
-                        <div class="form_box">
-                            <div class="form_box__inner">
-                                <div class="form_box__wrap">
-                                    <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                    <div class="form_box__subtitle">чтобы оставить отзыв</div>
-                                    <div class="form_box__content">
-                                        <form class="form" method="POST" action="{% url 'submit_testi' %}">
-                                            {% csrf_token %}
-                                            <input type="hidden" class="frm_tariff" name="tariff" value="unset">
-                                            <div class="form_group">
-                                                <input class="form_control clean_input" type="text" name="name"
-                                                    placeholder="Введите ваше ФИО">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="text" name="phone"
-                                                    placeholder="Введите ваш номер*">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="email" name="email"
-                                                    placeholder="Введите вашу почту*">
-                                            </div>
-                                            <div class="form_group mb_35">
-                                                <input class="form_control clean_input" type="text" name="text"
-                                                    placeholder="Введите отзыв*">
-                                            </div>
-                                            <button type="submit" class="btn btn_shadow"><span>Оставить отзыв</span></button>
-                                            
-                                            
-                                        </form>
+<section class="expert">
+    <div class="container">
+        <div class="expert__row">
+            <div class="expert__content">
+                <h2>
+                    <span>Наш девиз:</span>
+                    <span>Приходите, Обучайтесь, Зарабатывайте </span>
+                    <span>и живите с удовольствием!</span>
+                </h2>
+                <div class="expert__subtitle">
+                    Только реальные практические<br />
+                    знания. Без воды!
+                </div>
+            </div>
+            <div class="expert__form">
+                <div class="form_box">
+                    <div class="form_box__inner">
+                        <div class="form_box__wrap">
+                            <div class="form_box__title">Заполните <br />короткую форму,</div>
+                            <div class="form_box__subtitle">чтобы оставить отзыв</div>
+                            <div class="form_box__content">
+                                <form class="form" method="POST" action="{% url 'submit_testi' %}">
+                                    {% csrf_token %}
+                                    <input type="hidden" class="frm_tariff" name="tariff" value="unset">
+                                    <div class="form_group">
+                                        <input class="form_control clean_input" type="text" name="name"
+                                            placeholder="Введите ваше ФИО">
                                     </div>
-                                    <div class="form_box__bottom">Нажимая на кнопку «Оставить отзыв» вы
-                                        принимаете <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3" target="_blank" >условия
-                                            обработки данных</a></div>
-                                </div>
+                                    <div class="form_group mb_35">
+                                        <input class="form_control clean_input" type="text" name="phone"
+                                            placeholder="Введите ваш номер*">
+                                    </div>
+                                    <div class="form_group mb_35">
+                                        <input class="form_control clean_input" type="email" name="email"
+                                            placeholder="Введите вашу почту*">
+                                    </div>
+                                    <div class="form_group mb_35">
+                                        <input class="form_control clean_input" type="text" name="text"
+                                            placeholder="Введите отзыв*">
+                                    </div>
+                                    <button type="submit" class="btn btn_shadow"><span>Оставить отзыв</span></button>
+
+
+                                </form>
                             </div>
+                            <div class="form_box__bottom">Нажимая на кнопку «Оставить отзыв» вы
+                                принимаете <a
+                                    href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
+                                    target="_blank">условия
+                                    обработки данных</a></div>
                         </div>
-                        <div class="expert__form_one"></div>
-                        <div class="expert__form_two"></div>
                     </div>
                 </div>
+                <div class="expert__form_one"></div>
+                <div class="expert__form_two"></div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 {% endblock %}
-    
-
