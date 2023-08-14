@@ -3721,8 +3721,8 @@ a:hover {
 .long__btn{
   width: 100%;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 2rem;
 }
 
@@ -4723,7 +4723,11 @@ a:hover {
   color: #000;
 }
 
-
+.ul_button{
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
 select{
