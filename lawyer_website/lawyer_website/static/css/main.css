@@ -1527,6 +1527,30 @@ template {
   margin-bottom: 18px;
 }
 
+.arrow_container{
+  display: flex;
+  position: relative;
+}
+.arrow_down{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 55px;
+  top: 11px;
+}
+
+.arrow_down img{
+  width: 70px;
+  height: 50px;
+
+}
+
+.tink_wrapper{
+  padding: 15px;
+  background-color: #fadb2f;
+  border-radius: 15px;
+}
+
 .button-input {
   padding: 35px 55px 35px 95px !important;
   position: relative !important;
@@ -2783,6 +2807,7 @@ a:hover {
   align-items: center;
 
 }
+
 
 
 
@@ -4770,8 +4795,30 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-size: 2.1rem !important;
 }
 
+.wrapper_center{
+  text-align: center;
+}
+
+.expert__img{
+  margin-top: -70px;
+  margin-left: -100px;
+}
+
+@media (min-width: 800px) {
+  .expert__img::before{
+    content: "";
+    width: 770px;
+    height: 560px;
+    display: block;
+    background-image: url(../img/footer_backimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 70;
+  }
+}
 
 select{
   margin: 0;
@@ -4900,6 +4947,16 @@ select {
   }
   .curse__form{
     display: flex;
+
+  }
+  .left__image::before{
+    content: "";
+    display: block;
+    width: 600px;
+    height: 400px;
+    background-image: url(../img/backmessage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 

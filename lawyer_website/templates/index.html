@@ -16,7 +16,7 @@
                     <span>на рынке кредитования?</span>
                 </h1>
                 <div class="promo__heading">Всё просто!</div>
-                <div class="promo__text">
+                <div class="promo__text" style="color: #f39110; font-weight: 700">
                     Пройдите фирменный экспресс курс становления кредитным
                     брокером от ФС Школы кредитного брокера и получите необходимые знания
                 </div>
@@ -172,7 +172,7 @@
         <div class="curse__text">
             Наша организация обладает безупречной репутацией и высоким уровнем профессионализма. Как и все
             надежные брокеры, оказывающие реальную помощь, мы работаем строго в правовом поле. Обучаем и помогаем
-            разобраться с гаджетами, мессенджерами и приложениями.
+            разобраться с гаджетами, мессенджерами и мобильными приложениями.
         </div>
         <div class="curse__contentt">
             <!-- <div class="curse__content-title">
@@ -218,6 +218,7 @@
                         Оформите заявку и мы</br>
                         с вами свяжемся!</br>
                     </h2>
+                    <div class="left__image"></div>
                 </div>
                 <div class="curse__form-right">
                     <div class="form_box">
@@ -384,7 +385,7 @@
                 <div class="cost__header_subtitle">
                     <span>Приятный бонус: </span>
                     <span>При выходе на работу в нашу команду с первой сделки оплата вознаграждения плюс возврат
-                        стоимости экспресс курса</span>
+                        стоимости за пройденный экспресс курс</span>
                 </div>
             </div>
         </div>
@@ -487,7 +488,7 @@
                     <div class="price price_standard">
                         <div class="price__box">
                             <div class="price__wrap">
-                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__subtitle">Тариф на сессию</div>
                                 <div class="price__title">Индивидуально</div>
                                 <div class="price__intro">
                                     Лично проводимое наставником индивидуальная сессия - только Вы и Вами
@@ -508,35 +509,6 @@
                                 </div>
                                 <div class="text_center">
                                     <a href="{% url 'pay_info' %}" class="btn " data-target="Стандарт"><span>Перейти к
-                                            оплате</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="price price_optimal">
-                        <div class="price__box">
-                            <div class="price__wrap">
-                                <div class="price__subtitle">Тариф на обучение</div>
-                                <div class="price__title">Оптимизация КИ</div>
-                                <div class="price__intro">Лично проводимую куратором индивидуальная сессия - только
-                                    Вы и Вами приглашённые люди. </div>
-                                <ul class="price__info mb_50">
-                                    <li>анализ исходных документов и и консультации по их пакетированию</li>
-                                    <li>отработка комфортных финансовых условий по сделке </li>
-                                    <li>предоставление проекта договора, приложений, актов сдачи приема</li>
-                                    <li>разбор личных КИ</li>
-                                    <li>разбор сложных случаев на реальных примерах</li>
-                                    <li>продолжительность 90 мин</li>
-                                </ul>
-                                <div class="price__value">
-                                    <span>Всего </span>
-                                    <strong>5 000</strong>
-                                    <sub> руб</sub>
-                                </div>
-                                <div class="text_center">
-                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
                                             оплате</span></a>
                                 </div>
                             </div>
@@ -579,6 +551,36 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__subtitle">Тариф на сессию</div>
+                                <div class="price__title">Оптимизация КИ</div>
+                                <div class="price__intro">Лично проводимую куратором индивидуальная сессия - только
+                                    Вы и Вами приглашённые люди. </div>
+                                <ul class="price__info mb_50">
+                                    <li>анализ исходных документов и и консультации по их пакетированию</li>
+                                    <li>отработка комфортных финансовых условий по сделке </li>
+                                    <li>предоставление проекта договора, приложений, актов сдачи приема</li>
+                                    <li>разбор личных КИ</li>
+                                    <li>разбор сложных случаев на реальных примерах</li>
+                                    <li>продолжительность 90 мин</li>
+                                </ul>
+                                <div class="price__value">
+                                    <span>Всего </span>
+                                    <strong>5 000</strong>
+                                    <sub> руб</sub>
+                                </div>
+                                <div class="text_center">
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
+                                            оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
 
             </ul>
             <ul class="cost__block block2">
@@ -586,7 +588,7 @@
                     <div class="price price_optimal">
                         <div class="price__box">
                             <div class="price__wrap">
-                                <div class="price__subtitle">Тариф на обучение</div>
+                                <div class="price__subtitle">Тариф на сессию</div>
                                 <div class="price__title">Стать Партнером</div>
                                 <div class="price__intro">Лично проводимое основателем школы индивидуальное занятие -
                                     только Вам. </div>
@@ -647,12 +649,12 @@
                                 <div class="price__intro">Как на этом заработать, как зарабатывать с нами, как создать свою франшизу, как купить нашу и тп</div>
                                 <ul class="price__info">
 
-                                    <li>что такое бизнес, франчайзер и франшиза </li>
+                                    <li>что такое франчайзинг и франшиза </li>
                                     <li>кто такие франчайзер и франчайзи </li>
                                     <li>откуда и куда паушальный взнос и роялти</li>
-                                    <li>как на этом заработать, как зарабатывать с нами, как создать свою франшизу, как купить нашу и тп</li>
                                     <li>Слушателю : с первой сделки с нами ( или если купили у нас франшизу или привели покупателя ) - получает обратно - возвращаем стоимость данного курса слушателю курса, который применил знания, работая или сотрудничая с нами 
                                     </li>
+                                    <li>продолжительность 120 мин</li>
                                 </ul>
 
                                 <div class="price__value">
@@ -677,10 +679,13 @@
                         <div class="price__box">
                             <div class="price__wrap">
                                 <div class="price__title">Способы оплаты</div>
-                                <div class="price__intro" style="font-size: 2.1rem;">Вы можете оплачивать покупку любого экспресс курса многими способами:</div>
+                                <div class="price__intro" style="font-size: 2.1rem;">Вы можете оплачивать покупку любого экспресс курса многими дополнительными способами:</div>
                                 <ul class="price__info mb_50">
                                     <a href="" class="btn ul_button">Плати по счету</a>
                                     <a href="" class="btn ul_button">Плати долями</a>
+                                    <a href="" class="btn ul_button">Купи по email</a>
+                                    <a href="" class="btn ul_button">Купи в складчину</a>
+
                                     <a href="" class="btn ul_button">Оплати в рассрочку</a>
                                     <a href="" class="btn ul_button">Тинькофф Кредит Брокер</a>
                                 </ul>
@@ -692,21 +697,28 @@
                     <div class="price price_optimal">
                         <div class="price__box">
                             <div class="price__wrap">
-                                <div class="price__title">Курсы можно купить в магазинах:</div>
+                                <div class="price__title" style="font-size: 2.3rem;">Курсы можно купить в магазинах:</div>
                                 <ul class="price__info mb_50">
                                     <ul class="price__info mb_50">
                                         <a href="" class="btn ul_button">Купи в TAPLINK</a>
-                                        <a href="" class="btn ul_button">Лови CASHBACK</a>
-                                        <a href="" class="btn ul_button">Купи в складчину</a>
-                                        <a href="" class="btn ul_button" style="margin-bottom: 40px;">Купи по email</a>
+                                        <a href="" class="btn ul_button" style="margin-bottom: 40px;">ЛОВИ CASHBACK</a>
+                                        <div class="wrapper_center">
                                         <h4>От нас в один клик и в банк!</h4>
+                                    </div>
                                         <a href="" class="btn ul_button" style="margin-top: 15px;">АО Тинькофф Банк</a>
-                                        <h4>Возможности:</h4>
-                                        <li style="margin-top: 15px;">1. Открой счет</li>
-                                        <li>2. Начни бизнес</li>
-                                        <li>3. Открой валютный счет</li>
-                                        <li>4. Получи кредит</li>
-                                        <li>5. Tinkoff Black</li>
+                                        <div class="tink_wrapper">
+                                            <div class="wrapper_content">
+                                            <h4>Возможности:</h4>
+                                            <li style="margin-top: 15px;">1. Открой счет</li>
+                                            <li>2. Начни бизнес</li>
+                                            <li>3. Открой валютный счет</li>
+                                            <li>4. Получи кредит</li>
+                                            <li>5. Tinkoff Black</li>
+                                            </div>
+                                            <div class="tink__logo"><img src="" alt=""></div>
+
+                                            <img src="{% static 'img/tink.svg' %}" alt="" style="display: block; margin: 0 auto">
+                                        </div>
                                 </ul>
 
                             </div>
@@ -797,8 +809,6 @@
             Благодарности тех,<br />
             кто уже прошли обучение
         </h2>
-        <div class="comments__subtitle">по фирменной программе</div>
-
         <div class="comments__inner">
             <div class="comments__slider swiper-container">
                 <div class="swiper-wrapper">
@@ -813,7 +823,7 @@
                                     <div class="comment__author_content">
                                         <div class="comment__author_name">Евгений Красовский</div>
                                         <div class="comment__author_info">Основатель кредитного брокера в городе
-                                            Томск</div>
+                                            Томск, купивший франшизу</div>
                                     </div>
                                 </div>
                                 <div class="comment__title">«Другой взгляд на банковскую систему позволил уже
@@ -843,13 +853,13 @@
                                             агентстве элитной недвижимости</div>
                                     </div>
                                 </div>
-                                <div class="comment__title">«За первый месяц обучения практических знаний
+                                <div class="comment__title">«За первые дни обучения практических знаний
                                     получила в несколько раз больше, чем за 5 лет в институте»</div>
-                                <div class="comment__text">«Проходила обучение по программе «ФС Школа Кредитного
-                                    Брокера». Сам в институте 5 лет учился, получил банковское образование, и
-                                    за первый месяц обучения практических знаний получил в несколько раз больше,
+                                <div class="comment__text">«Проходила обучение по программам «ФС Школа Кредитного
+                                    Брокера». Сама в институте 5 лет учился, получила банковское образование, и
+                                    за первые дни обучения практических знаний получила в несколько раз больше,
                                     чем за всё время обучения в институте. Очень много практических «фишек»,
-                                    которые применяются на практике сразу без воды. Очень доволен. Каждая идея
+                                    которые применяются на практике сразу без воды. Очень довольна. Каждая идея
                                     сразу приносит деньги».</div>
                                 <div class="text_center">
                                 </div>
@@ -893,7 +903,7 @@
                                     <div class="comment__author_content">
                                         <div class="comment__author_name">Илья Ромашкин</div>
                                         <div class="comment__author_info">Основатель кредитного брокера в городе
-                                            Ставрополь</div>
+                                            Ставрополь, покупатель франшизы</div>
                                     </div>
                                 </div>
                                 <div class="comment__title">«Все вложения, получилось окупить за 4 месяца»</div>
@@ -904,7 +914,7 @@
                                     Выбрав направление кредитного брокера, перешел к поиску обучения. Оценив все
                                     отзывы, информацию, стоимость, пришел к компании «ФС Школа Кредитного Брокера».
                                     Решил долго не тянуть и спустя неделю плотного общения с
-                                    представителем компании, в канун нового года, подписал договор.
+                                    представителем компании подписал договор.
                                     Все вложения, получилось окупить за 4 месяца. Сейчас в основном работаю с
                                     юридическими лицами, поток большой, все идут по рекомендации, получил очень
                                     много полезных знакомств».</div>
@@ -934,7 +944,7 @@
                                     решили, что пора начать работать на себя. Логично, что приоритетным
                                     направлением для нас был брокеридж.
                                     Ознакомившись в интернете с ФС Школой Кредитного Брокера, решили приобрести
-                                    обучение. В итоге успешно работаем в этой сфере целый год».</div>
+                                    обучение. В итоге успешно работаем».</div>
                                 <div class="text_center" style="display: none;">
                                 </div>
                             </div>
@@ -1130,14 +1140,15 @@
         <div class="expert__row">
             <div class="expert__content">
                 <h2>
-                    <span>Наш девиз:</span>
-                    <span>Заходите, Обучайтесь, Зарабатывайте </span>
+                    <span>Наш девиз:</span> </br>
+                    <span>Заходите, обучайтесь, зарабатывайте </span>
                     <span>и живите с удовольствием!</span>
                 </h2>
                 <div class="expert__subtitle">
                     Только реальные практические<br />
                     знания. Без воды!
                 </div>
+                <div class="expert__img"></div>
             </div>
             <div class="expert__form">
                 <div class="form_box">

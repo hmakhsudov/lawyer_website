@@ -108,6 +108,7 @@
                             <input type="text" placeholder="Ваше ФИО" name="name" class="form_control clean_input">
                             <input type="email" placeholder="Ваша почта" name="email" class="form_control clean_input">
                             <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" class="form_control clean_input">
+                          <div class="arrow_container">
                             <select name="course" id="course" class="custom-select">
                                 <option value="standart">Стандарт</option>
                                 <option value="optimal">Оптимал</option>
@@ -120,6 +121,8 @@
                                 <option value="fran">Франшиза</option>
                                 <option value="test">Тест</option>
                             </select>
+                            <div class="arrow_down"><img src="{% static 'img/Arrow-down.png' %}" alt=""></div>
+                        </div>
                             <input type="hidden" name="amount" id="amount">
                         </div>
                         <div class="form__right">
@@ -128,7 +131,7 @@
                             </div>
                             <div class="form__pay">                          
                                 <div class="form__pay-left">
-                                    Оплата банковской картой
+                                    Оплата любой банковской картой
                                 </div>
                                 <div class="form__pay-right">
                                     <img src="{% static 'img/tink.svg' %}" alt="" >
