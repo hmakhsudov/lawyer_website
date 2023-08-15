@@ -1,6 +1,95 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+
+<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        // Your code here
+        const selectElement = document.getElementById('course');
+        const totalPriceElement = document.getElementById('totalPrice');
+        const amountInput = document.getElementById('amount');
+    
+        selectElement.addEventListener('change', () => {
+            // Update the price based on the selected option
+            const selectedOption = selectElement.value;
+            let price = 0;
+            switch (selectedOption) {
+                case 'standart':
+                price = 7500;
+                break;
+                case 'optimal':
+                price = 12000;
+                break;
+                case 'vip':
+                price = 25000;
+                break;
+                case 'individual':
+                price = 11000;
+                break;
+                case 'changejob':
+                price = 9500;
+                break;
+                case 'ki':
+                price = 5000;
+                break;
+                case 'becomepartner':
+                price = 10000;
+                break;
+                case 'upakovka':
+                price = 6500;
+                break;
+                case 'fran':
+                price = 8500;
+                break;
+                case 'test':
+                price = 50;
+                break;
+                default:
+                price = 0;
+            }
+    
+            // Update the displayed price
+            totalPriceElement.textContent = price.toLocaleString(); // Format the price with commas
+            amountInput.value = price;
+        });
+    });
+    // JavaScript to handle the change event of the select element
+  
+
+    function tPayformFunction(target) {
+        console.log("Function called"); // Debugging line
+        let form = document.forms["payform-tinkoff"];
+        let amount = form.amount.value;
+        let email = form.email.value;
+        let phone = form.phone.value;
+    
+        if (amount && email && phone) {
+            form.receipt.value = JSON.stringify({
+                "Email": email,
+                "Phone": phone,
+                "EmailCompany": "mail@mail.com",
+                "Taxation": "patent",
+                "Items": [
+                    {
+                        "Name": "Оплата",
+                        "Price": amount + '00',
+                        "Quantity": 1.00,
+                        "Amount": amount + '00',
+                        "PaymentMethod": "full_prepayment",
+                        "PaymentObject": "service",
+                        "Tax": "none"
+                    }
+                ]
+            });
+            pay(form);
+        } else {
+            alert("Не все обязательные поля заполнены");
+        }
+        return false;
+    }    
+  </script>
             <section class="payment__content">
                 <div class="container">
                     <div class="payment__title">
@@ -9,14 +98,15 @@
                     </h2>
                     </div>
                     <div class="payment__forms">
-                    <form action="" class="payment__form" onsubmit="pay(this); return false;">
-                        <input class="payform-tinkoff-row" type="hidden" name="terminalkey" value="TinkoffBankTest">
-                        <input class="payform-tinkoff-row" type="hidden" name="frame" value="true">
+                    <form action="" class="payment__form" name="payform-tinkoff">
+                        <input class="payform-tinkoff-row" type="hidden" name="terminalkey" value="1690539261013">
+                        <input class="payform-tinkoff-row" type="hidden" name="frame" value="false">
                         <input class="payform-tinkoff-row" type="hidden" name="language" value="ru"> 
+                        <input class="payform-tinkoff-row" type="hidden" name="receipt" value="">
 
                         <div class="form__left">
-                            <input type="text" placeholder="Ваше ФИО" class="form_control clean_input">
-                            <input type="email" placeholder="Ваша почта" class="form_control clean_input">
+                            <input type="text" placeholder="Ваше ФИО" name="name" class="form_control clean_input">
+                            <input type="email" placeholder="Ваша почта" name="email" class="form_control clean_input">
                             <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" class="form_control clean_input">
                             <select name="course" id="course" class="custom-select">
                                 <option value="standart">Стандарт</option>
@@ -28,7 +118,9 @@
                                 <option value="becomepartner">Стать партнером</option>
                                 <option value="upakovka">Цифровая упаковка</option>
                                 <option value="fran">Франшиза</option>
+                                <option value="test">Тест</option>
                             </select>
+                            <input type="hidden" name="amount" id="amount">
                         </div>
                         <div class="form__right">
                             <div class="form__price">
@@ -42,7 +134,9 @@
                                     <img src="{% static 'img/tink.svg' %}" alt="" >
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn_shadow">Подтвердить и перейти к оплате</button>
+                            <div class="button-input-container">
+                                <input class="button-input btn" type="button" onclick="tPayformFunction(this)" value="Подтвердить и перейти к оплате">
+                            </div>
 
                             <div class="form__agreement">
                                 Нажимая на кнопку подтвердить, вы соглашаетесь с <a href="https://docs.google.com/document/d/160hojoS2Hj2lqD3pty3JGNAw7Z7PsHbNS0-br3i-QK4/edit?usp=sharing">офертой</a>
@@ -57,4 +151,6 @@
                  </div>
                 </div>
             </section>
+
+
 {% endblock %}

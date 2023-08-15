@@ -1527,6 +1527,34 @@ template {
   margin-bottom: 18px;
 }
 
+.button-input {
+  padding: 35px 55px 35px 95px !important;
+  position: relative !important;
+  display: block !important;
+  margin: 0 auto !important;
+  margin-bottom: 40px !important;
+  color: #fff !important;
+  overflow: hidden; /* Ensure that the container wraps its content properly */
+}
+
+.button-input-container {
+  position: relative;
+}
+
+.button-input-container::before {
+  content: ""; /* No need for !important here */
+  background-image: url(../img/card.png);
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 60px; /* Adjust the positioning based on your design preference */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 399;
+}
+
+
 .btn {
   margin: 0;
   padding: 0;
@@ -4675,9 +4703,7 @@ a:hover {
   }
 }
 
-.price_perek{
 
-}
 
 @media (min-width: 1000px) {
   .payment__form{
