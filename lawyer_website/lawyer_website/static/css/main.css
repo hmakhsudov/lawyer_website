@@ -1539,6 +1539,10 @@ template {
   top: 11px;
 }
 
+.wrapper_center{
+  margin-bottom: 40px;
+}
+
 .arrow_down img{
   width: 70px;
   height: 50px;
