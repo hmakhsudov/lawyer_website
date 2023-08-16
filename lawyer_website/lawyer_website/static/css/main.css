@@ -4804,12 +4804,13 @@ a:hover {
   text-align: center;
 }
 
-.expert__img{
-  margin-top: -70px;
-  margin-left: -100px;
-}
+
 
 @media (min-width: 800px) {
+  .expert__img{
+    margin-top: -70px;
+    margin-left: -100px;
+  }
   .expert__img::before{
     content: "";
     width: 770px;
