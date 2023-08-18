@@ -4804,6 +4804,9 @@ a:hover {
   text-align: center;
 }
 
+.wrapper_content li a:hover{
+  color: #0109db;
+}
 
 .cart_description{
   text-align: center;
