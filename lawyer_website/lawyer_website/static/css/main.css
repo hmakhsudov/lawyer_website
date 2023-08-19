@@ -3776,6 +3776,24 @@ a:hover {
   border-radius: 50%;
 }
 
+
+.lishka{
+  width: 300px;
+}
+
+.box2{
+  max-width: 300px;
+}
+
+
+.lishka{
+  margin-top: -150px;
+}
+
+
+
+
+
 .long__btn{
   width: 100%;
   text-align: center;
