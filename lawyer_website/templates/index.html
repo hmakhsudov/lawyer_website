@@ -700,7 +700,7 @@
                                 <div class="price__title">Способы оплаты</div>
                                 <div class="price__intro" style="font-size: 2.1rem; ">Вы можете оплачивать покупку любого экспресс курса и сессии многими дополнительными способами:</div>
                                 <ul class="price__info mb_50">
-                                    <a href="" class="btn ul_button">Плати по счету</a>
+                                    <a href="{% url 'pay_by_check' %}" class="btn ul_button">Плати по счету</a>
                                     <a href="" class="btn ul_button">Плати долями</a>
                                     <a href="" class="btn ul_button">Оплати в рассрочку</a>
                                     <a href="" class="btn ul_button">Купи по email</a>
@@ -850,6 +850,9 @@
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
                 <a href="">Скидки и подарки</a>
+            </div>
+            <div class="additional" style="margin-top: 60px; margin-bottom: 10px">
+                <h2 style="color: white;">Скоро тут появится возможность записываться на курсы и сессии по выбранной вами дате. Также, вы сможете получать чеки и применять их для получения скидок!</h2>
             </div>
         </div>
         <div class="cost__stamp" id="scene2">

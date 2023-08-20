@@ -3786,11 +3786,40 @@ a:hover {
 }
 
 
-.lishka{
-  margin-top: -150px;
+
+.select__title{
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
+@media (min-width: 990px) {
+  .lishka1{
+    margin-right: auto;
+    margin-left: -80px;
+  }
+  .lishka{
+    margin-top: -150px;
+  }
+  
+  .lishka2{
+    margin-right: -80px;
+  }
+  
+}
 
+@media (min-width: 300px) {
+  .lishka1{
+    margin: 0 auto;
+  }
+  .lishka{
+    margin: 0 auto;
+  }
+  
+  .lishka2{
+    margin: 0 auto;
+  }
+  
+}
 
 
 

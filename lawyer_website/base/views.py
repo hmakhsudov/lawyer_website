@@ -8,6 +8,10 @@ def index(request):
 def pay_info(request):
     return render(request, 'payment.html')
 
+
+def pay_by_check(request):
+    return render(request, 'payment_schet.html')
+
 def process_form(request):
     if request.method == 'POST':
         # Get the form data from the request.POST dictionary

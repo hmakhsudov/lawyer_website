@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from base.views import index, pay_info, process_form, process_form_testimonial, pay_test
+from base.views import index, pay_info, process_form, process_form_testimonial, pay_test, pay_by_check
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -26,7 +26,7 @@ urlpatterns = [
     path('pay_info/', pay_info, name='pay_info'),
     path('submit/', process_form, name='process_form'),
     path('submit_testi/', process_form_testimonial, name='submit_testi'),
-    path('pay_test/', pay_test, name='pay_test')
+    path('pay_by_check/', pay_by_check, name='pay_by_check'),
 ]
 
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
