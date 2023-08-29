@@ -59,6 +59,12 @@
                         <span></span>
                     </div>
                 </div>
+                <div class="down__arrow" >
+                    <button id="scrollToFooter">
+                    <h2>Вниз</h2>
+                    <img src="{% static 'img/down_arrow.svg' %}" alt="" width="40px" height="40px">                    
+                </button>
+                </div>
                 <ul class="header__contact">
                     <li><a class="header__contact_email" href="mailto:info@school-broker.ru">info@school-broker.ru</a></li>
                     <li><a class="header__contact_phone" href="tel:+79099740123">+7 (909) 974-01-23</a></li>
@@ -69,7 +75,7 @@
     {% block content %}
 
     {% endblock %}
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__row">
                 <div class="footer__about">
@@ -85,6 +91,7 @@
                         <li><img src="{% static 'img/link.png' %}" alt=""><a href="https://taplink.cc/svetlana_fs">Taplink</a></li>
                         <li><img src="{% static 'img/link.png' %}" alt=""><a href="">ЛОВИ CASHBACK</a></li>
                         <li><img src="{% static 'img/link.png' %}" alt=""><a href="https://t.me/fs_School_CB/61">Пройди опросы</a></li>
+                        <li><img src="{% static 'img/link.png' %}" alt=""><a href="https://t.me/fs_School_CB/61">Сертификаты</a></li>
                     </ul>
                 </nav>
                 <ul class="footer__contact">
@@ -126,6 +133,22 @@
                                             fill="#fff"></path>
                                     </g>
                                 </svg> </i>
+                        </a>
+                        <a href="https://vk.com/ariastark2" target="_blank">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ico_svg">
+                                    <path
+                                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                </svg>
+                            </i>
+                        </a>
+                        <a href="https://vk.com/ariastark2" target="_blank">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ico_svg">
+                                    <path
+                                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                </svg>
+                            </i>
                         </a>
                         <a href="https://vk.com/ariastark2" target="_blank">
                             <i>
@@ -210,6 +233,41 @@
             block: "start"
         });
     }
+    document.getElementById('scrollToFooter').addEventListener('click', function() {
+        const footer = document.getElementById('footer');
+        footer.scrollIntoView({ behavior: 'smooth' });
+      });
+      const elementList = document.getElementById('elementList');
+const showMoreButton = document.getElementById('showMoreButton');
+const elements = elementList.getElementsByTagName('li');
+const initialVisibleCount = 5;
+let visibleCount = initialVisibleCount;
+
+$(document).ready(function() {
+  const elementList = $('#elementList');
+  const elements = elementList.children('li');
+  const initialVisibleCount = 5;
+  let visibleCount = initialVisibleCount;
+
+  function updateVisibility() {
+    elements.hide();
+    elements.slice(0, visibleCount).show();
+    
+    if (visibleCount >= elements.length) {
+      $('#showMoreButton').hide();
+    } else {
+      $('#showMoreButton').show();
+    }
+  }
+
+  $('#showMoreButton').on('click', function() {
+    visibleCount += initialVisibleCount + 2;
+    updateVisibility();
+  });
+
+  updateVisibility();
+});
+
 </script>
 
 

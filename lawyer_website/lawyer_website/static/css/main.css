@@ -2034,7 +2034,7 @@ a:hover {
 .header__contact_email {
   color: #191919;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.2rem;
   text-decoration: none;
 }
@@ -2045,7 +2045,7 @@ a:hover {
 .header__contact_phone {
   color: #191919;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 3rem;
   text-decoration: none;
 }
@@ -4585,6 +4585,47 @@ a:hover {
   }
 }
 
+
+.down__arrow{
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  margin-left: 20px;
+}
+
+.down__arrow button{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  cursor: pointer;
+}
+
+.down__arrow img{
+  margin-left: 5px;
+}
+
+@media (min-width: 300px) {
+  .down__arrow{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 0;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .down__arrow{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -350px;
+    
+  }
+}
+
+
+
 .bg_item {
   z-index: 100;
   display: none;
@@ -4863,11 +4904,34 @@ a:hover {
 
 .cart_description a{
   text-decoration: none !important;
-  color:#0109db !important;
+  color:#ff4d03 !important;
   font-size: 3rem;
 
 }
 
+.additional__block{
+  text-align: center;
+  margin-top: 50px;
+}
+.sklad{
+  margin-top: 50px;
+}
+
+.additional__image{
+  margin-bottom: 20px;
+}
+
+.wrapper_content button{
+  background-color: transparent;
+  border: none;
+  margin-left: 110px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#elementList{
+  list-style: none;
+}
 
 @media (min-width: 800px) {
   .expert__img{
@@ -5132,3 +5196,6 @@ select {
   
 }
 
+.promo__content{
+  margin-top: 30px !important;
+}
