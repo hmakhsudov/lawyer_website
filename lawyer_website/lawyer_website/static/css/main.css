@@ -3507,17 +3507,17 @@ a:hover {
   }
   .cost__header_content {
     padding-top: 60px;
-    padding-left: 300px;
+    padding-left: 250px;
     position: relative;
-    height: 280px;
+    height: 1180px;
   }
   .cost__header_content:before {
-    left: -100px;
+    left: -361px;
     bottom: 0;
     z-index: 1;
     top: -20px;
     content: "";
-    width: 394px;
+    width: 600px;
     height: 1180px;
     position: absolute;
     background: url("../img/cost_man3.png") 0 0 no-repeat;
@@ -3552,14 +3552,14 @@ a:hover {
 }
 @media (min-width: 992px) {
   .cost__header_content {
-    height: 400px;
+    height: 1280px;
     padding-top: 120px;
     padding-left: 450px;
   }
   .cost__header_content:before {
     left: -130px;
     width: 563px;
-    height: 400px;
+    height: 1100px;
   }
   .cost__content {
     padding-top: 10px;
@@ -3622,7 +3622,7 @@ a:hover {
     margin-right: -900px;
     z-index: 10;
     width: 371px;
-    height: 436px;
+    height: 1360px;
     display: block;
     position: absolute;
   }
