@@ -228,27 +228,47 @@
                                 <div class="form_box__title">Заполните <br />короткую форму,</div>
                                 <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
                                 <div class="form_box__content">
-                                    <form class="form" method="POST" action="{% url 'process_form' %}">
+                                    <form class="form" method="POST" action="{% url 'process_form_check' %}">
                                         {% csrf_token %}
                                         <input type="hidden" class="frm_tariff" name="tariff" value="unset">
                                         <div class="form_group">
                                             <input class="form_control clean_input" type="text" name="name" id="name"
-                                                placeholder="Введите ваше ФИО*">
+                                                placeholder="Введите ваше ФИО*" required>
                                         </div>
                                         <div class="form_group mb_35">
                                             <input class="form_control clean_input" type="email" name="email" id="email"
-                                                placeholder="Введите вашу почту*">
+                                                placeholder="Введите вашу почту*" required>
                                         </div>
 
                                         <div class="form_group mb_35">
                                             <input class="form_control clean_input" type="phone" name="phone" id="phone"
-                                                placeholder="Введите ваш номер*">
+                                                placeholder="Введите ваш номер*" required>
                                         </div>
-                                        <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>На
-                                                консультацию</span></button>
+                                        <div class="form_group mb_35">
+                                            <input class="form_control clean_input" type="text" name="inn" id="inn"
+                                                placeholder="Введите ваш ИНН и КПП*" required>
+                                        </div>
+                                        <div class="form_group mb_35">
+                                            <h3>Выберите курс, вебинар, сессию или услугу</h3>
+                                        </div>
+                                        <div class="form_group mb_35">
+                                            <select name="course" id="course" class="custom-select">
+                                                <option value="standart">Стандарт</option>
+                                                <option value="optimal">Оптимал</option>
+                                                <option value="vip">VIP</option>
+                                                <option value="individual">Индивидуально</option>
+                                                <option value="changejob">Переквалификация</option>
+                                                <option value="ki">Оптимизация КИ</option>
+                                                <option value="becomepartner">Стать партнером</option>
+                                                <option value="upakovka">Цифровая упаковка</option>
+                                                <option value="fran">Франшиза</option>
+                                                <option value="primenenie">Применение</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>Заявка на получение счета</span></button>
                                     </form>
                                 </div>
-                                <div class="form_box__bottom">Нажимая на кнопку «На консультацию» вы
+                                <div class="form_box__bottom">Нажимая на кнопку «Заявка на получение счета» вы
                                     принимаете <a
                                         href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
                                         target="_blank">условия
@@ -575,9 +595,9 @@
 
                                     <li>обучение анализу исходных документов и их аналитика </li>
                                     <li>отработка комфортных финансовых условий внутри сложной сделки </li>
-                                    <li>построение взаимоотношений внутри напряженных секторов рынка</li>
+                                    <li>построение взаимоотношений внутри сопряженных секторов рынка</li>
                                     <li>обмен навыками и практическими знаниями для увеличения ассортимента услуг</li>
-                                    <li>проведение совместных вебинаров и веб-конференций</li>
+                                    <li>проведение совместных вебинаров и веб-конференций для обмена опытом</li>
                                     <li>продолжительность 120 мин </li>
                                 </ul>
 
@@ -605,7 +625,7 @@
                                 <div class="price__intro">Лично проводимая куратором индивидуальная сессия - только
                                     Вы и Вами приглашённые люди. </div>
                                 <ul class="price__info mb_50">
-                                    <li>анализ исходных документов и и консультации по их пакетированию</li>
+                                    <li>анализ исходных документов и консультации по их пакетированию</li>
                                     <li>отработка комфортных финансовых условий по сделке </li>
                                     <li>предоставление проекта договора, приложений, актов сдачи приема</li>
                                     <li>разбор личных КИ</li>
@@ -807,15 +827,20 @@
                                             <li><a href="https://link.tinkoff.ru/2224llhWYsi">3. Открой валютный счет</a></li>
                                             <li><a href="https://link.tinkoff.ru/3ma3nXbqCNT">4. Получи кредит</a></li>
                                             <li><a href="https://link.tinkoff.ru/4qMZ6KQxqqm">5. Tinkoff Black</a></li>
-                                            <li><a href="https://link.tinkoff.ru/9fH94OoQIW3">6. Начни бизнес</a></li>
-                                            <li><a href="https://link.tinkoff.ru/2224llhWYsi">7. Открой валютный счет</a></li>
-                                            <li><a href="https://link.tinkoff.ru/3ma3nXbqCNT">8. Получи кредит</a></li>
-                                            <li><a href="https://link.tinkoff.ru/4qMZ6KQxqqm">9. Tinkoff Black</a></li>
-                                            <li><a href="https://link.tinkoff.ru/3ma3nXbqCNT">10. Получи кредит</a></li>
-                                            <li><a href="https://link.tinkoff.ru/4qMZ6KQxqqm">11. Tinkoff Black</a></li>
-                                            <li><a href="https://link.tinkoff.ru/4qMZ6KQxqqm">12. Tinkoff Black</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/rko/form?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">6. РКО</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/acquiring/form/rent?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">7. Аренда Торговый эквайринг</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/acquiring/form/rent?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">8. Касса в точке продаж</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/rko/form/salary?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">9. Зарплатный проект</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/registration-ip/form/partners?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">10. Регистрация ИП</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/registration-ooo/form?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">11. Регистрация ООО с одним учредителем</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/turnover/form?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">12. Оборотный кредит</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/rko/form/currency?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">13. ВЭД</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/turnover-contract/form?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">14. Кредитная линия под контракт</a></li>
+                                            <li><a href="https://www.tinkoff.ru/business/special/form?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">15. Спецсчет</a></li>
+                                            <li><a href="https://www.tinkoff.ru/corporate/payout/self-employed/?utm_medium=ptr.act&utm_campaign=sme.partners&partnerId=5-3CSC9V4W5&agentId=5-2CKUVXU2J&agentSsoId=36a292ee-68e6-4e6f-b016-c438b2989bc3&utm_source=partner_rko_a_sme">16. Выплаты самозанятым</a></li>
+                                            <li><a href="https://www.tinkoff.ru/kassa/?utm_source=partners_sme&utm_medium=prt.utl&utm_campaign=business.int_acquiring.5-3CSC9V4W5">17. Интернет эквайринг</a></li>
                                             </ul>
-                                            <button id="showMoreButton">Еще...</button>
+                                            <button id="showMoreButton">ЕЩЕ...</button>
                                             </div>
                                             <div class="tink__logo"><img src="" alt=""></div>
 
@@ -895,10 +920,13 @@
 
             </ul> -->
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи Услугу цифровой упаковки</a>
+                <a href="">Купи Ознакомительный ВЕБИНАР 500Р или скрины мин трех постов о школе</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи Франшизу</a>
+                <a href="">Купи услугу Цифровой упаковки твоего бизнеса</a>
+            </div>
+            <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
+                <a href="">Купи Франшизу Школы</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
                 <a href="">Трудоустройство</a>

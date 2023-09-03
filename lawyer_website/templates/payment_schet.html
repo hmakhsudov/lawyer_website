@@ -97,7 +97,7 @@
                 <div class="container">
                     <div class="payment__title">
                     <h2>
-                        <span>Вы можете оплатить курс по счету</span>
+                        <span>Все можете купить в пару кликов по счету</span>
                     </h2>
                     </div>
                     <div class="payment__forms">
@@ -108,11 +108,17 @@
                         <input class="payform-tinkoff-row" type="hidden" name="receipt" value="">
 
                         <div class="form__left">
+                            <div class="form__left-text"><h4>Номер счета получателя: 324251351</h4></div>
+                            <input type="hidden" placeholder="3434223578" name="rekvizit" class="form_control clean_input">
                             <input type="text" placeholder="Ваше ФИО" name="name" class="form_control clean_input">
                             <input type="email" placeholder="Ваша почта" name="email" class="form_control clean_input">
                             <input type="text" id="phone" name="phone" placeholder="Введите номер телефона" class="form_control clean_input">
+                            <input type="text" id="schet" name="schet" placeholder="Введите номер счета" class="form_control clean_input">
+                            <div class="form__left-text"><h4>Введите дату счета</h4></div>
+
+                            <input type="date" id="date" name="date" placeholder="Введите дату" class="form_control clean_input">
                             <div class="select__title">
-                                <h3>Выберите курс или сессию</h3>
+                                <h3>Выбранная услуга, сессия, курс или вебинар</h3>
                             </div>
                           <div class="arrow_container">
                             <select name="course" id="course" class="custom-select">
@@ -130,29 +136,29 @@
                             </select>
                             <div class="arrow_down"><img src="{% static 'img/Arrow-down.png' %}" alt=""></div>
                         </div>
-                            <input type="hidden" name="amount" id="amount" value="7500">
                         </div>
                         <div class="form__right">
                             <div class="form__price">
-                                Итого: <span id="totalPrice">7 500</span> руб.
+                                <input type="text" name="amount" id="amount" placeholder="Введите цену по счету в рублях" class="form_control clean_input">
+
                             </div>
                             <div class="form__pay">                          
                                 <div class="form__pay-left" style="margin-bottom: 10px; margin-top: 20px">
                                     Оплата любой банковской картой
                                 </div>
-                                <div class="form__pay-right">
-                                    <img src="{% static 'img/tink.svg' %}" alt="" >
-                                </div>
+
                             </div>
                             <div class="button-input-container">
                                 <input class="button-input btn" type="button" onclick="tPayformFunction(this)" value="Подтвердить и перейти к оплате">
                             </div>
-
+                            <div class="form__pay-right">
+                                <img src="{% static 'img/tink.svg' %}" alt="" >
+                            </div>
                             <div class="form__agreement">
-                                Нажимая на кнопку подтвердить, вы соглашаетесь с <a href="">офертой</a>
+                                Нажимая на кнопку подтвердить, вы соглашаетесь с <a href="https://telegra.ph/Oferta-FS-SHkoly-Kreditnogo-Brokera-08-14">офертой</a>
                             </div>
                             <div class="form__takeback" style="margin-top: 20px;">
-                                Вы можете подать <a href="https://docs.google.com/document/d/1c8FXSGsIjXH9cJV0SM5ey2Qfrrz4P0lVEk4iBHGCZk4/edit?usp=sharing">Заявление на возврат средств</a>
+                                Вы можете подать обоснованное<a href="https://docs.google.com/document/d/1c8FXSGsIjXH9cJV0SM5ey2Qfrrz4P0lVEk4iBHGCZk4/edit?usp=sharing">Заявление на возврат средств</a>
                             </div>
 
                         </div>
@@ -161,7 +167,6 @@
                  </div>
                 </div>
             </section>
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
             <script>
                 $(function() {

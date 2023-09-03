@@ -33,6 +33,28 @@ def process_form(request):
 
     return render(request, 'success.html')
 
+def process_form_check(request):
+    if request.method == 'POST':
+        # Get the form data from the request.POST dictionary
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        inn = request.POST.get('inn')
+        subject = 'ЗАЯВКА НА ПОЛУЧЕНИЕ СЧЕТА'  # The subject of the email
+        message = f'ФИО ОТПРАВИТЕЛЯ: {name}\n ПОЧТА ОТПРАВИТЕЛЯ: {email}\n ТЕЛЕФОН ОТПРАВИТЕЛЯ: {phone}\n ИНН или КПП ОТПРАВИТЕЛЯ: {inn}'  # The email body message
+        from_email = settings.EMAIL_HOST_USER  # The sender's email address
+        recipient_list = [settings.EMAIL_HOST_USER, 'info@school-broker.ru']  # A list of recipient email addresses
+
+        send_mail(subject, message, from_email, recipient_list)
+        
+        # Do something with the form data (e.g., save to the database, send emails, etc.)
+        # ...
+
+        # For example, you can print the form data to the console
+
+    return render(request, 'success.html')
+
+
 def process_form_testimonial(request):
     if request.method == 'POST':
         name = request.POST.get('name')

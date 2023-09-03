@@ -3873,8 +3873,9 @@ a:hover {
   display: none;
 }
 
-
-
+.form__left-text{
+  margin-bottom: 20px;
+}
 
 
 .price__value {
