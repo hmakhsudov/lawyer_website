@@ -407,7 +407,7 @@
                             <div class="price__box">
                                 <div class="price__wrap">
                                     <div class="price__subtitle">Экспресс курс</div>
-                                    <div class="price__title">Ознакомительный ВЕБИНАР или мин<span> три поста</span> о Школе 
+                                    <div class="price__title smaller_text">Ознакомительный ВЕБИНАР или мин<span> три поста</span> о Школе 
                                     </div>
                                     <div class="price__intro">Личное обучение от руководителей по фирменной
                                         программе</div>
@@ -422,8 +422,7 @@
                                         <li>Вход за 500₽ ИЛИ беслатно за размещение мин трех постов о Школе в ваших соц сетях и мессенджерах в группах ! (<span>взять пост</span>) </li>
                                     </ul>
                                     <div class="price__value">
-                                        <span>Cтоимость </span>
-                                        <strong style="font-size: 2rem;">500₽ или мин три скрина</strong>
+                                        <strong class="smaller_text">500₽ или мин три скрина</strong>
                                     </div>
                                     <div class="cart_description"><a href="https://telegra.ph/Trehdnevnyj-kurs-VIP-07-23">ОПИСАНИЕ</a></div>
     
@@ -550,7 +549,7 @@
                         <div class="price__box">
                             <div class="price__wrap">
                                 <div class="price__subtitle">Тариф на сессию</div>
-                                <div class="price__title">Индивидуально</div>
+                                <div class="price__title smaller_text">Индивидуально</div>
                                 <div class="price__intro">
                                     Лично проводимая наставником индивидуальная сессия - только Вы и Вами
                                     приглашённые люди.
@@ -583,7 +582,7 @@
                         <div class="price__box">
                             <div class="price__wrap">
                                 <div class="price__subtitle">Тариф на обучение</div>
-                                <div class="price__title" style="font-size: 2.3rem;">Переквалификация</div>
+                                <div class="price__title smaller_text">Переквалификация</div>
                                 <div class="price__intro">Предоставление нужных знаний и навыков для
                                     Переквалификации. Если вы:</div>
                                 <ul class="price__info price__info2">
@@ -748,7 +747,7 @@
             </ul>
             <ul class="cost__block block2">
 
-                <li style="margin: 0 auto;">
+                <li style="margin: 0 auto; margin-bottom: 15px;">
                     <div class="price price_optimal">
                         <div class="price__box">
                             <div class="price__wrap">
@@ -765,8 +764,8 @@
                                 </ul>
                                 <div class="additional__block sklad">
                                     <div class="additional__image"><img src="{% static 'img/check.png' %}" width="150px" height="150px" alt=""></div>
-                                    <div class="additional__title"><h3>Складирование чеков</h3></div>
-                                    <!-- <div class="additional__subtitle">Какой-то текст для складирования чеков. </div> -->
+                                    <div class="additional__title" style="margin-bottom: 25px;"><h3>Складирование чеков</h3></div>
+                                    <a href="{% url 'sklad' %}" class="btn ul_button">Плати долями</a>
                                 </div>
                             </div>
                         </div>
@@ -920,10 +919,13 @@
 
             </ul> -->
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи Ознакомительный ВЕБИНАР 500Р или скрины мин трех постов о школе</a>
+                <a href="">Купи Ознакомительный ВЕБИНАР 500Р </a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи услугу Цифровой упаковки твоего бизнеса</a>
+                <a href="{% url 'screenshot' %}">Получи Ознакомительный ВЕБИНАР прикрепив скрины мин трех постов о школе</a>
+            </div>
+            <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
+                <a href="">Купи услугу </br> Цифровой упаковки твоего бизнеса</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
                 <a href="">Купи Франшизу Школы</a>

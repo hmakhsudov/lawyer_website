@@ -3518,7 +3518,7 @@ a:hover {
     top: -20px;
     content: "";
     width: 600px;
-    height: 1180px;
+    height: 1000px;
     position: absolute;
     background: url("../img/cost_man3.png") 0 0 no-repeat;
     background-size: cover;
@@ -3550,6 +3550,18 @@ a:hover {
     width: 500px;
   }
 }
+
+@media (min-width: 300px) {
+  .smaller_text{
+    font-size: 1.9rem !important; 
+  }
+}
+@media (min-width: 700px){
+ .smaller_text{
+  font-size: 2.3rem !important;
+ }
+}
+
 @media (min-width: 992px) {
   .cost__header_content {
     height: 1280px;
@@ -3559,7 +3571,7 @@ a:hover {
   .cost__header_content:before {
     left: -130px;
     width: 563px;
-    height: 1100px;
+    height: 1000px;
   }
   .cost__content {
     padding-top: 10px;
@@ -3606,7 +3618,7 @@ a:hover {
   .cost__header_content:before {
     left: -345px;
     width: 798px;
-    height: 1150px;
+    height: 1000px;
   }
   .cost__content {
     padding-bottom: 120px;
@@ -4922,6 +4934,8 @@ a:hover {
 
 }
 
+
+
 .additional__block{
   text-align: center;
   margin-top: 50px;
@@ -5217,4 +5231,14 @@ select {
 
 .promo__content{
   margin-top: 30px !important;
+}
+
+.button-input2{
+  padding: 35px 55px !important;
+} 
+
+.button-input2::before{
+  content: "";
+  width: 0;
+  height: 0;
 }

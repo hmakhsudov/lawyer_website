@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+        // Your code here
+        const selectElement = document.getElementById('course');
+        const totalPriceElement = document.getElementById('totalPrice');
+        const amountInput = document.getElementById('amount');
+    
+        selectElement.addEventListener('change', () => {
+            // Update the price based on the selected option
+            const selectedOption = selectElement.value;
+            let price = 0;
+            switch (selectedOption) {
+                case 'standart':
+                price = 7500;
+                break;
+                case 'optimal':
+                price = 12000;
+                break;
+                case 'vip':
+                price = 25000;
+                break;
+                case 'individual':
+                price = 11000;
+                break;
+                case 'changejob':
+                price = 9500;
+                break;
+                case 'ki':
+                price = 5000;
+                break;
+                case 'becomepartner':
+                price = 10000;
+                break;
+                case 'upakovka':
+                price = 6500;
+                break;
+                case 'fran':
+                price = 8500;
+                break;
+                case 'primenenie':
+                price = 10500;
+                break;
+                case 'test':
+                price = 5;
+                break;
+                default:
+                price = 0;
+            }
+    
+            // Update the displayed price
+            totalPriceElement.textContent = price.toLocaleString(); // Format the price with commas
+            amountInput.value = price;
+        });
+    });
+    // JavaScript to handle the change event of the select element
+  
+
+    function tPayformFunction(target) {
+        console.log("Function called"); // Debugging line
+        let form = document.forms["payform-tinkoff"];
+        let amount = form.amount.value;
+        let email = form.email.value;
+        let phone = form.phone.value;
+    
+        if (amount && email && phone) {
+            form.receipt.value = JSON.stringify({
+                "Email": email,
+                "Phone": phone,
+                "EmailCompany": "mail@mail.com",
+                "Taxation": "patent",
+                "Items": [
+                    {
+                        "Name": "Оплата",
+                        "Price": amount + '00',
+                        "Quantity": 1.00,
+                        "Amount": amount + '00',
+                        "PaymentMethod": "full_prepayment",
+                        "PaymentObject": "service",
+                        "Tax": "none"
+                    }
+                ]
+            });
+            pay(form);
+        } else {
+            alert("Не все обязательные поля заполнены");
+        }
+        return false;
+    }    
+  </script>
+            <section class="payment__content">
+                <div class="container">
+                    <div class="payment__title">
+                    <h2>
+                        <span>Прикрепите 3 скриншота постов о школе сюда</span>
+                    </h2>
+                    </div>
+                    <div class="payment__forms">
+                    <form action="" class="payment__form form" name="payform-tinkoff">
+            
+
+                        <div class="form__left">
+                            <div class="additional__title" style="margin-bottom: 25px;"><h3>Введите ваши данные</h3></div>
+
+                            <input type="text" placeholder="Ваше ФИО" name="name" class="form_control clean_input">
+                            <input type="email" placeholder="Ваша почта" name="email" class="form_control clean_input">
+                            <div class="additional__title" style="margin-bottom: 25px;"><h3>Прикрепите сюда 3 скриншота</h3></div>
+                        
+                            <input type="file" placeholder="Прикрепите сюда скриншот" class="form_control clean_input">
+                            <input type="file" placeholder="Прикрепите сюда скриншот" class="form_control clean_input">
+                            <input type="file" placeholder="Прикрепите сюда скриншот" class="form_control clean_input">
+                            <div class="form__pay">                          
+                      
+                            </div>
+
+                                <a class="button-input btn button-input button-input2" href="{% url 'submit_sklad' %}">Отправить скриншоты</a>
+                            
+
+                        </div>
+                        </div>
+                       
+
+                        </div>
+                    </form>
+    
+                 </div>
+                </div>
+            </section>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+            <script>
+                $(function() {
+                    console.log("Script executed");
+                    $(".form input[name='phone']").mask("+7 (999) 999-99-99");
+                });
+                
+        </script>
+            
+
+{% endblock %}
