@@ -225,8 +225,7 @@
                     <div class="form_box">
                         <div class="form_box__inner">
                             <div class="form_box__wrap">
-                                <div class="form_box__title">Заполните <br />короткую форму,</div>
-                                <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
+                                <div class="form_box__title">Запрос на получение <br />счета на оплату</div>
                                 <div class="form_box__content">
                                     <form class="form" method="POST" action="{% url 'process_form_check' %}">
                                         {% csrf_token %}
@@ -253,6 +252,8 @@
                                         </div>
                                         <div class="form_group mb_35">
                                             <select name="course" id="course" class="custom-select">
+
+                                                <option value="webinar">Ознакомительный Вебинар</option>
                                                 <option value="standart">Стандарт</option>
                                                 <option value="optimal">Оптимал</option>
                                                 <option value="vip">VIP</option>
@@ -263,6 +264,8 @@
                                                 <option value="upakovka">Цифровая упаковка</option>
                                                 <option value="fran">Франшиза</option>
                                                 <option value="primenenie">Применение</option>
+                                                <option value="it">IT и Деньги</option>
+                                                <option value="test">Тест</option>
                                             </select>
                                         </div>
                                         <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>Заявка на получение счета</span></button>
@@ -937,7 +940,6 @@
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
                 <a href="https://t.me/fs_School_CB/48">Скидки и подарки</a>
             </div>
-
         </div>
         <div class="cost__stamp" id="scene2">
             <div class="cost__stamp_wrap" data-depth="0.4"></div>
@@ -945,6 +947,35 @@
         <div class="cost__plant"></div>
     </div>
 </section>
+<li style="max-width: 400px; margin: 0 auto; margin-top: -340px">
+    <div class="price price_vip price_perek">
+        <div class="price__box" style="min-height: 500px">
+            <div class="price__wrap">
+                <div class="price__subtitle">Экспресс курс</div>
+                <div class="price__title">IT и Деньги</div>
+         
+                <ul class="price__info" style="margin-bottom: 20px;">
+                    <li> Что связывает ИТ и деньги  </li>
+                    <li>Как я могу на этом зарабатывать  </li>
+                    <li>Научим по выбору ( тут значки - телеграмм дискорд ютуб ВК Твич ) </li>
+                    <li>продолжительность 120 мин ( и более по доп договоренности ) </li>
+                </ul>
+
+                <div class="price__value">
+                    <span>Всего </span>
+                    <strong>15 000</strong>
+                    <sub> руб</sub>
+                </div>
+                <div class="cart_description" style="margin-bottom: 20px;"><a href="https://telegra.ph/Odnodnevnyj-kurs-Perekvalifikaciya-07-24">ОПИСАНИЕ</a></div>
+
+                <div class="text_center">
+                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
+                            оплате</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
 <!-- 
         <section class="whom" id="whom">
             <div class="container">

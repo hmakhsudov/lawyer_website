@@ -3482,7 +3482,7 @@ a:hover {
   z-index: 20;
   position: relative;
   padding-top: 70px;
-  padding-bottom: 200px;
+  padding-bottom: 400px !important;
   background: url("../img/price__bg.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
@@ -3575,7 +3575,7 @@ a:hover {
   }
   .cost__content {
     padding-top: 10px;
-    padding-bottom: 120px;
+    padding-bottom: 300px;
   }
   .cost__block {
     margin-top: -100px;
@@ -3621,7 +3621,7 @@ a:hover {
     height: 1000px;
   }
   .cost__content {
-    padding-bottom: 120px;
+    padding-bottom: 300px;
   }
   .cost__block {
     margin-top: -185px;
