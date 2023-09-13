@@ -17,8 +17,8 @@
                 </h1>
                 <div class="promo__heading">Всё просто!</div>
                 <div class="promo__text" style="color: #ff4d03; font-weight: 700">
-                    Пройдите экспресс курс Оптимал и станет понятно зачем нужен статус кредитный брокер и почему заработать от 250 000 руб в мес это только старт, а не финиш. 
-                </br>Курс Применение даст лайфак как начать применять знания в рынке и зарабатывать от 750 000 руб и более. </br>
+                    Пройдите экспресс курс Оптимал и станет понятно зачем нужен статус кредитный брокер и почему заработать <span>от 250 000 руб в мес </span> это только старт, а не финиш. 
+                </br>Курс Применение даст лайфак как начать применять знания в рынке и зарабатывать<span> от 750 000 руб и более </span> </br>
 Все курсы имеют описания - ознакомься и не пропусти свой шанс.
                 </div>
                 <button class="btn_lead btn_scroll" id="scrollToTopBtn" onclick="scrollToSection()"><span>Посмотреть
@@ -81,8 +81,7 @@
                 <div class="form_box">
                     <div class="form_box__inner">
                         <div class="form_box__wrap">
-                            <div class="form_box__title">Заполните <br />короткую форму,</div>
-                            <div class="form_box__subtitle">чтобы получить письмо с подробной информацией</div>
+                            <div class="form_box__title">Ответим на любые вопросы</div>
                             <div class="form_box__content">
                                 <form class="form" method="POST" action="{% url 'process_form' %}">
                                     {% csrf_token %}
@@ -225,7 +224,7 @@
                     <div class="form_box">
                         <div class="form_box__inner">
                             <div class="form_box__wrap">
-                                <div class="form_box__title">Запрос на получение <br />счета на оплату</div>
+                                <div class="form_box__title" style="margin-bottom: 20px">Запрос счета на оплату</div>
                                 <div class="form_box__content">
                                     <form class="form" method="POST" action="{% url 'process_form_check' %}">
                                         {% csrf_token %}
@@ -251,7 +250,7 @@
                                             <h3>Выберите курс, вебинар, сессию или услугу</h3>
                                         </div>
                                         <div class="form_group mb_35">
-                                            <select name="course" id="course" class="custom-select">
+                                            <select name="course" id="course" class="custom-select" style="font-size: 1.6rem;">
 
                                                 <option value="webinar">Ознакомительный Вебинар</option>
                                                 <option value="standart">Стандарт</option>
@@ -266,6 +265,8 @@
                                                 <option value="primenenie">Применение</option>
                                                 <option value="it">IT и Деньги</option>
                                                 <option value="test">Тест</option>
+                                                <option value="test">Услуга цифр упаковки</option>
+                                                <option value="test">Франшиза школы</option>
                                             </select>
                                         </div>
                                         <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>Заявка на получение счета</span></button>
@@ -756,7 +757,7 @@
                         <div class="price__box">
                             <div class="price__wrap">
                                 <div class="price__title">Способы оплаты</div>
-                                <div class="price__intro" style="font-size: 2.1rem; ">Вы можете оплачивать покупку любого экспресс курса и сессии многими дополнительными способами:</div>
+                                <div class="price__intro" style="font-size: 2.1rem; ">Вы можете оплачивать дополнительными способами:</div>
                                 <ul class="price__info ">
                                     <a href="{% url 'pay_by_check' %}" class="btn ul_button">Плати по счету</a>
                                     <a href="" class="btn ul_button">Плати долями</a>
@@ -768,8 +769,8 @@
                                 </ul>
                                 <div class="additional__block sklad">
                                     <div class="additional__image"><img src="{% static 'img/check.png' %}" width="150px" height="150px" alt=""></div>
-                                    <div class="additional__title" style="margin-bottom: 25px;"><h3>Складирование чеков</h3></div>
-                                    <a href="{% url 'sklad' %}" class="btn ul_button">Плати долями</a>
+                                    <div class="additional__title" style="margin-bottom: 25px;"><h3>Склад чеков</h3></div>
+                                    <a href="{% url 'sklad' %}" class="btn ul_button">Тут складируйте чек</a>
                                 </div>
                             </div>
                         </div>
