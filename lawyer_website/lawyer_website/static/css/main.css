@@ -2305,6 +2305,14 @@ a:hover {
 }
 
 
+.price__info span{
+  color: #0109db;
+}
+
+.spaneer{
+  color: #0109db !important;
+}
+
 .footer__links{
   color: #0109db !important;
 }
