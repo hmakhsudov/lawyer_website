@@ -272,11 +272,13 @@
                                         <button type="submit" class="btn btn_shadow" name="submit" id="submit"><span>Заявка на получение счета</span></button>
                                     </form>
                                 </div>
-                                <div class="form_box__bottom">Нажимая на кнопку «Заявка на получение счета» вы
+                                <div class="form_box__bottom" style="margin-bottom: 15px;">Нажимая на кнопку «Заявка на получение счета» вы
                                     принимаете <a
                                         href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
                                         target="_blank">условия
                                         обработки данных</a></div>
+                                        <a  href="{% url 'pay_by_check' %}"  class="btn btn_shadow" style="padding: 25px;">Оплата по счету</a>
+
                             </div>
                         </div>
                     </div>
@@ -413,8 +415,7 @@
                                     <div class="price__subtitle">Экспресс курс</div>
                                     <div class="price__title smaller_text">Ознакомительный ВЕБИНАР или мин<span> три поста</span> о Школе 
                                     </div>
-                                    <div class="price__intro">Личное обучение от руководителей по фирменной
-                                        программе</div>
+                        
                                     <ul class="price__info">
                                         <li>Первая встреча с потенциальными слушателями Школы </li>
                                         <li>Расскажем о философии и правилах Школы </li>
@@ -852,8 +853,8 @@
                                         </div>
                                         <div class="additional__block">
                                             <div class="additional__image"><img src="{% static 'img/calendar.png' %}" width="150px" height="150px" alt=""></div>
-                                            <div class="additional__title"><h3>Выбрать время курса</h3></div>
-                                            <div class="additional__subtitle">Выбрать и записаБться . Так же выбирайте свободные места на поток в выбранную дату и время  ; если на поток все места заняты , запишитесь на ближайшее свободное время. Если у вас есть вопрос по записи - задайте его через форму обратной связи внизу сайта или через телеграм бот</div>
+                                            <div class="additional__text" style="margin-bottom: 10px;"><h3>Выбрать время курса</h3></div>
+                                            <div class="additional__subtitle">1. Выбирайте свободные места на поток в нужную вам дату и время</br>2. Если на поток все места заняты, запишитесь на ближайшее свободное время </br>3. Если у вас есть вопрос по записи - задайте его через форму обратной связи внизу сайта или через телеграм бот</div>
                                         </div>
                                 </ul>
 
@@ -927,16 +928,16 @@
                 <a href="">Купи Ознакомительный ВЕБИНАР 500Р </a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="{% url 'screenshot' %}">Получи Ознакомительный ВЕБИНАР <</br>>прикрепив сюда скрины </br>мин трех постов о школе</a>
+                <a href="{% url 'screenshot' %}">Получи Ознакомительный ВЕБИНАР </br>прикрепив сюда скрины </br>мин трех постов о школе</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи услугу </br> Цифровой упаковки твоего бизнеса</a>
+                <a href="">Ознакомься и купи услугу </br> Цифровой упаковки твоего бизнеса</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Купи Франшизу Школы</a>
+                <a href="">Ознакомься и купи Франшизу Школы</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
-                <a href="">Трудоустройство</a>
+                <a href="">Про Трудоустройство</a>
             </div>
             <div class="btn long__btn btn_shadow" style="margin-top: 30px;">
                 <a href="https://t.me/fs_School_CB/48">Скидки и подарки</a>

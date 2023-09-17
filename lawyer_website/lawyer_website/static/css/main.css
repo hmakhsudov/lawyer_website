@@ -2176,7 +2176,7 @@ a:hover {
 .footer__contact_phone {
   color: #191919;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   text-decoration: none;
   margin-top: 15px;
@@ -2186,6 +2186,7 @@ a:hover {
   text-decoration: none;
 }
 .footer__social {
+  flex-wrap: wrap;
   font-size: 0;
   line-height: 0;
   margin: 0 -7px 30px -7px;
@@ -2211,6 +2212,7 @@ a:hover {
   border: none;
   outline: none;
   margin: 0 7px;
+  margin-bottom: 10px;
   padding: 9px 0;
   text-align: center;
   background: #3e4f66;
@@ -4835,7 +4837,7 @@ a:hover {
 
 @media all and (min-width: 992px) and (max-width: 1229px){
     .footer__contact_phone{
-        font-size: 1.7rem !important;
+        font-size: 1.4rem !important;
     }
 }
 
