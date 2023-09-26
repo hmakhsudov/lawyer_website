@@ -10,14 +10,14 @@ services:
       context: .
     ports:
       - "8000:8000"
-  # postgresql:
-  #   image: postgres:15  # You can specify the PostgreSQL version you want here.
-  #   environment:
-  #     POSTGRES_DB: mydb
-  #     POSTGRES_USER: myuser
-  #     POSTGRES_PASSWORD: mypassword
-  #   volumes:
-  #     - postgres_data:/var/lib/postgresql/data
+  postgresql:
+    image: postgres:15  # You can specify the PostgreSQL version you want here.
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
   nginx:
     build: ./nginx
     volumes:
