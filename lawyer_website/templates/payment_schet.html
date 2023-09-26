@@ -108,6 +108,7 @@
                     </div>
                     <div class="payment__forms">
                     <form action="" class="payment__form form" name="payform-tinkoff">
+                         {% csrf_token %}
                         <input class="payform-tinkoff-row" type="hidden" name="terminalkey" value="1690539261013">
                         <input class="payform-tinkoff-row" type="hidden" name="frame" value="false">
                         <input class="payform-tinkoff-row" type="hidden" name="language" value="ru"> 
