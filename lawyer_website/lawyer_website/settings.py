@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'mydb',
         'USER': 'myuser',
         'PASSWORD': 'mypassword',
-        'HOST': '172.18.0.3',  # Set to the PostgreSQL server hostname or IP address
+        'HOST': 'postgresql',  # Set to the PostgreSQL server hostname or IP address
         'PORT': '5432',       # Default PostgreSQL port
     }
 }
