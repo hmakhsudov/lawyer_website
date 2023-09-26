@@ -33,4 +33,4 @@ services:
 
 volumes:
   static:
-  # postgres_data:  # Define a volume for PostgreSQL data persistence.
+  postgres_data:  # Define a volume for PostgreSQL data persistence.
