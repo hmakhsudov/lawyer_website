@@ -134,6 +134,7 @@ STATIC_ROOT = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'lawyer_website/static/'),
 ]
+
 CSRF_TRUSTED_ORIGINS = ['https://school-broker.ru', 'https://www.school-broker.ru']
 
 CSRF_COOKIE_SECURE = True
