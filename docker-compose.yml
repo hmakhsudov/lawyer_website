@@ -16,8 +16,7 @@ services:
       POSTGRES_DB: mydb
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
-    ports: 
-      - "5432:5432"
+
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -31,7 +30,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-      - "5432:5432"
     depends_on:
       - django_gunicorn
 
