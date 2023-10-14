@@ -12,6 +12,7 @@ services:
       - "8000:8000"
   postgresql:
     image: postgres:15  # You can specify the PostgreSQL version you want here.
+    network_mode: bridge
     environment:
       POSTGRES_DB: mydb
       POSTGRES_USER: myuser
