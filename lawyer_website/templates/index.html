@@ -852,7 +852,8 @@
                                         <div class="additional__block">
                                             <div class="additional__image"><img src="{% static 'img/calendar.png' %}" width="150px" height="150px" alt=""></div>
                                             <div class="additional__text" style="margin-bottom: 10px;"><h3>Выбрать время курса</h3></div>
-                                            <div class="additional__subtitle">1. Выбирайте свободные места на поток в нужную вам дату и время</br>2. Если на поток все места заняты, запишитесь на ближайшее свободное время </br>3. Если у вас есть вопрос по записи - задайте его через форму обратной связи внизу сайта или через телеграм бот</div>
+                                            <a href="{% url 'calendar' %}" class="btn ul_button">Записаться</a>
+
                                         </div>
                                 </ul>
 

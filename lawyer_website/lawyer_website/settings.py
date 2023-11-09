@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base',
+    'my_calendar',
 ]
 
 MIDDLEWARE = [
@@ -78,18 +79,18 @@ WSGI_APPLICATION = 'lawyer_website.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb',
-        'USER': 'myuser',
-        'PASSWORD': 'mypassword',
-        'HOST': '172.24.0.3',  # Set to the PostgreSQL server hostname or IP address
-        'PORT': 5432,       # Default PostgreSQL port
-    }
     # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'mydb',
+    #     'USER': 'myuser',
+    #     'PASSWORD': 'mypassword',
+    #     'HOST': '172.24.0.3',  # Set to the PostgreSQL server hostname or IP address
+    #     'PORT': 5432,       # Default PostgreSQL port
     # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
@@ -117,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 

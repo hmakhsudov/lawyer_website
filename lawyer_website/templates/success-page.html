@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <section class="success__content">
+            <div class="container">
+            <h2><span>Вы успешно записались</span> <br/>
+                <span>Проверьте вашу почту</span> 
+            </h2>
+            <a href="{% url 'index' %}" class="success__back">Вернуться на главную страницу</a>
+        </div>
+        </section>
+
+{% endblock %}

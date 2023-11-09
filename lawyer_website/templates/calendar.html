@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load custom_filters %}
+
+
+
+<section class="calendar">
+    <div class="container">
+
+        <div class="calendar__slide">
+            <h1>Выберите удобное время и запишитесь!</h1>
+            <div class="calendar__slide-nav">
+                <button class="button__week" id="previous-week">◄</button>
+
+                <div class="calendar__slide-week">
+                    {{week_date_ranges}}
+                </div>
+                <button class="button__week" id="next-week">►</button>
+            </div>
+        </div>
+        <ul class="calendar__events">
+            {% for event in events %}
+
+
+            <li class="price__box calendar__event" style="min-height: 300px; padding:30px">
+                <div class="calendar__event-left">
+                    <div class="event__name">{{event.name}}</div>
+                    <div class="event__weekday">{{ event.day_of_week }} </div>
+                    <div class="event__date">{{ event.date_starting|rus_date }} {{ event.date_starting|display_time }}</div>                    
+                    <div class="event__participants">Количество участников: {{ event.amount_of_participants }}/{{event.limit_of_participants }}</div>
+                </div>
+                <div class="calendar__event-right">
+                    <div class="calendar__button">
+                        <button class="btn calendar__button open-modal" data-course-name="{{ event.name }}" data-date="{{ event.date_starting|rus_date }} {{ event.date_starting|display_time }}">Enroll</button>
+                    </div>
+                </div>
+
+
+            </li>
+
+
+            {% endfor %}
+        </ul>
+        <div class="modal" id="enrollmentModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <h3>Хотите записаться на курс <span id="courseName"></span> course?</h3>
+                    <h3><span id="eventDate"></span></h3>
+                    <form id="enrollmentForm" method="post" action="{% url 'enroll-page' %}">
+                        {% csrf_token %}
+                        <input type="email" name="email" required placeholder="Почта">
+                        <input type="tel" name="phone" required placeholder="Телефон">
+                        <input type="hidden" id="courseId" name="courseId">
+                        <button type="submit">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let currentWeek = "{{ start_of_week }}";
+    
+        $("#previous-week").click(function () {
+            let prevWeek = new Date(currentWeek);
+            prevWeek.setDate(prevWeek.getDate() - 7);
+    
+            let prevWeekStr = prevWeek.toISOString().split('T')[0];
+            window.location.href = "/calendar/?start_of_week=" + prevWeekStr;
+        });
+    
+        $("#next-week").click(function () {
+            let nextWeek = new Date(currentWeek);
+            nextWeek.setDate(nextWeek.getDate() + 7);
+    
+            let nextWeekStr = nextWeek.toISOString().split('T')[0];
+            window.location.href = "/calendar/?start_of_week=" + nextWeekStr;
+        });
+  
+
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const openModals = document.querySelectorAll('.open-modal');
+        const enrollmentModal = document.getElementById('enrollmentModal');
+        const courseName = document.getElementById('courseName');
+        const courseIdInput = document.getElementById('courseId');
+        const eventDate = document.getElementById('eventDate');
+
+    
+        openModals.forEach(openModal => {
+            openModal.addEventListener('click', () => {
+                const courseNameText = openModal.getAttribute('data-course-name');
+                const eventDateText = openModal.getAttribute('data-date');
+
+                courseName.textContent = courseNameText;
+                eventDate.textContent = eventDateText;
+
+                courseIdInput.value = ''; // You can set the course ID here
+    
+                // Display the modal
+                enrollmentModal.style.display = 'block';
+            });
+        });
+    
+
+    });
+</script>
+
+
+{% endblock %}

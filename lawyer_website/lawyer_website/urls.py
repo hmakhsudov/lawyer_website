@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from base.views import index, pay_info, process_form, process_form_testimonial, pay_test, pay_by_check, process_form_check, sklad, process_form_sklad, screenshot
+from my_calendar.views import calendar_view, EnrollmentView, success_view
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -31,6 +32,10 @@ urlpatterns = [
     path('pay_by_check/', pay_by_check, name='pay_by_check'),
     path('sklad/', sklad, name='sklad'),
     path('screenshot/', screenshot, name='screenshot'),
+    path('calendar/', calendar_view, name='calendar'),
+    path('enroll/', EnrollmentView.as_view(), name='enroll-page'),
+    # Define the success page URL for redirection
+    path('success/', success_view, name='success-page'),
     
 ]
 
