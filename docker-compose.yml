@@ -29,6 +29,7 @@ services:
       - ./www_school_broker_ru_2024_02_22.crt:/www_school_broker_ru_2024_02_22.crt  
       - ./ssl_key.key:/ssl_key.key
       - ./intermediate_pem_globalsign_ssl_dv_free_1.crt:/intermediate_pem_globalsign_ssl_dv_free_1.crt
+      - ./combinedkeys.crt:/combinedkeys.crt
     ports:
       - "80:80"
       - "443:443"
