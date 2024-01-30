@@ -47,7 +47,7 @@
                 price = 10500;
                 break;
                 case 'test':
-                price = 5;
+                price = 50;
                 break;
                 case 'it':
                 price = 15000;
@@ -55,8 +55,17 @@
                 case 'webinar':
                 price = 500;
                 break;
+                case 'uslugaupakovka':
+                price = 450000;
+                break;
+                case 'uslugafran':
+                price = 350000;
+                break;
+                case 'uslugaqr':
+                price = 100000;
+                break;
                 default:
-                price = 0;
+                price = 500;
             }
     
             // Update the displayed price
@@ -130,11 +139,13 @@
                                 <option value="changejob">Переквалификация</option>
                                 <option value="ki">Оптимизация КИ</option>
                                 <option value="becomepartner">Стать партнером</option>
-                                <option value="upakovka">Цифровая упаковка</option>
-                                <option value="fran">Франшиза</option>
+                                <option value="upakovka">Курс по Цифровой упаковке</option>
+                                <option value="fran">Курс Франшиза</option>
                                 <option value="primenenie">Применение</option>
                                 <option value="it">IT и Деньги</option>
-                                <option value="test">Тест</option>
+                                <option value="uslugaupakovka">УСЛУГА ЦИФРОВОЙ УПАКОВКИ</option>
+                                <option value="uslugafran">УСЛУГА ФРАНШИЗА</option>
+                                <option value="test">Тест покупателя</option>
                             </select>
                             <div class="arrow_down"><img src="{% static 'img/Arrow-down.png' %}" alt=""></div>
                         </div>
