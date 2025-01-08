@@ -2007,14 +2007,10 @@ a:hover {
   justify-content: space-between;
 }
 .header__logo {
-  width: 400px;
-  height: 70px;
-  padding-left: 57px;
-  color: #191919;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  white-space: nowrap;
-  background: url("../img/logo.png") 0 50% no-repeat;
+  width: 300px;
+  color: #0109db;
+  font-size: 1.9rem;
+  font-weight: 700;
 }
 .header__logo_wrap {
   display: none;
@@ -2063,7 +2059,6 @@ a:hover {
   }
 
   .header__logo{
-    width: 400px !important;
   }
   .header__contact_phone {
     font-size: 2.4rem;
@@ -2074,7 +2069,6 @@ a:hover {
     padding-top: 40px;
   }
   .header__logo {
-    padding-left: 270px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2094,7 +2088,6 @@ a:hover {
 }
 @media (min-width: 1230px) {
   .header__logo {
-    padding-left: 300px;
   }
 }
 
@@ -2473,7 +2466,7 @@ a:hover {
 }
 .promo__title {
   font-weight: 600;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   line-height: 1.26;
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
@@ -2576,7 +2569,7 @@ a:hover {
 }
 @media (min-width: 1230px) {
   .promo__wrap {
-    height: 990px;
+    height: 930px;
     padding-bottom: 140px;
   }
   .promo__wrap:before {
@@ -2592,11 +2585,21 @@ a:hover {
     background-repeat: no-repeat;
   }
   .promo__title {
-    font-size: 4.6rem;
-    line-height: 5.8rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 500px;
   }
   .promo__heading {
-    margin-left: 70px;
+    margin-left: 0px;
+    width: 500px;
+  }
+  .promo__list{
+    list-style: none;
+    font-size: 2.2rem;
+    padding-left: 0;
+  }
+  .promo__list li{
+    margin-bottom: 20px;
   }
   .promo__text {
     margin-left: 70px;
@@ -2646,7 +2649,7 @@ a:hover {
 .start__list > li {
   min-height: 80px;
   padding-left: 95px;
-  font-size: 1.8rem;
+  font-size: 3.2rem;
   line-height: 2.6rem;
   position: relative;
   margin-bottom: 40px;
@@ -2660,6 +2663,11 @@ a:hover {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+}
+.start__list li a {
+  text-decoration: none;
+  color: #0109db;
+  font-weight: 700;
 }
 .start__list > li:last-child {
   margin-bottom: 0;
@@ -2894,7 +2902,6 @@ a:hover {
 }
 @media (min-width: 992px) {
   .curse {
-    padding-top: 100px;
   }
 }
 @media (min-width: 1230px) {
@@ -3536,7 +3543,7 @@ a:hover {
     left: -361px;
     bottom: 0;
     z-index: 1;
-    top: -20px;
+    top: 105px;
     content: "";
     width: 600px;
     height: 1000px;
@@ -3599,8 +3606,6 @@ a:hover {
     padding-bottom: 300px;
   }
   .cost__block {
-    margin-top: -100px;
-    margin-bottom: 190px;
     -webkit-flex-wrap: nowrap;
     -moz-flex-wrap: nowrap;
     -ms-flex-wrap: none;
@@ -3632,8 +3637,7 @@ a:hover {
 }
 @media (min-width: 1230px) {
   .cost__header_content {
-    height: 1350px;
-    padding-top: 160px;
+    height: 1160px;
     padding-left: 470px;
   }
   .cost__header_content:before {
@@ -3645,7 +3649,6 @@ a:hover {
     padding-bottom: 300px;
   }
   .cost__block {
-    margin-top: -185px;
   }
 }
 @media (min-width: 1600px) {
@@ -4574,7 +4577,7 @@ a:hover {
   .expert__subtitle {
     font-size: 2.4rem;
     line-height: 3.2rem;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
   .expert__subtitle span {
     display: block;
@@ -5053,7 +5056,6 @@ select {
   }
 
   .header__logo{
-    width: auto;
   }
 
   .whom .form_box{
@@ -5387,3 +5389,56 @@ select {
   cursor: pointer;
 }
 
+.promo__subtitle a{
+  color: #0109db;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.curse__subtext ul{
+  list-style: none;
+  padding-left: 0;
+}
+.curse__subtext ul li{
+  font-size: 1.8rem;
+  padding-left: 95px;
+  position: relative;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  color: #191919;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.curse__subtext ul li:before{
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 78px;
+  height: 78px;
+  margin-top: -39px;
+  position: absolute;
+  display: inline-block;
+  border: 1px solid #0109db;
+  background: url("../img/icon__check_red.png") 50% 50% no-repeat;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.cost__content-title{
+  font-size: 4rem;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}

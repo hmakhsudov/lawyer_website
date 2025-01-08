@@ -16,6 +16,12 @@
             const selectedOption = selectElement.value;
             let price = 0;
             switch (selectedOption) {
+                case 'konkurs':
+                price = 10000;
+                break;
+                case 'deposit':
+                price = 15000;
+                break;
                 case 'standart':
                 price = 7500;
                 break;
@@ -65,7 +71,7 @@
                 price = 450000;
                 break;
                 default:
-                price = 500;
+                price = 10000;
             }
     
             // Update the displayed price
@@ -131,21 +137,23 @@
                             </div>
                           <div class="arrow_container">
                             <select name="course" id="course" class="custom-select">
-                                <option value="webinar">Ознакомительный Вебинар</option>
+                                <option value="konsurs">ПРИЕМ ПЛАТЕЖЕЙ ПО КОНКУРСУ</option>
+                                <option value="deposit">ПРИЕМ ДЕПОЗИТНЫХ ПЛАТЕЖЕЙ</option>
+
                                 <option value="standart">Стандарт</option>
                                 <option value="optimal">Оптимал</option>
                                 <option value="vip">VIP</option>
                                 <option value="individual">Индивидуально</option>
                                 <option value="changejob">Переквалификация</option>
-                                <option value="ki">Оптимизация КИ</option>
-                                <option value="becomepartner">Стать партнером</option>
+                                <!-- <option value="ki">Оптимизация КИ</option> -->
+                                <!-- <option value="becomepartner">Стать партнером</option> -->
                                 <option value="upakovka">Курс по Цифровой упаковке</option>
-                                <option value="fran">Курс Франшиза</option>
+                                <!-- <option value="fran">Курс Франшиза</option> -->
                                 <option value="primenenie">Применение</option>
-                                <option value="it">IT и Деньги</option>
+                                <option value="it">IT, активы, средства, диджитал</option>
                                 <option value="uslugaupakovka">УСЛУГА ЦИФРОВОЙ УПАКОВКИ БИЗНЕСА</option>
                                 <option value="uslugaqr">УСЛУГА ПО УПАКОВКЕ В QR И ТЕЛЕГРАФ</option>
-                                <option value="uslugafran">КУПИТЬ ФРАНШИЗУ ШКОЛЫ</option>
+                                <!-- <option value="uslugafran">КУПИТЬ ФРАНШИЗУ ШКОЛЫ</option> -->
                                 <option value="test">Тест покупателя</option>
                             </select>
                             <div class="arrow_down"><img src="{% static 'img/Arrow-down.png' %}" alt=""></div>
@@ -154,7 +162,7 @@
                         </div>
                         <div class="form__right">
                             <div class="form__price">
-                                Итого: <span id="totalPrice">500</span> руб.
+                                Итого: <span id="totalPrice">10000</span> руб.
                             </div>
                             <div class="form__pay">                          
                                 <div class="form__pay-left" style="margin-bottom: 10px; margin-top: 20px">
