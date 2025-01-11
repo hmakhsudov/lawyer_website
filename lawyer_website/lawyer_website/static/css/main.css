@@ -1664,11 +1664,10 @@ template {
   outline: none;
   cursor: pointer;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 3rem;
   user-select: none;
   text-align: center;
-  white-space: nowrap;
   position: relative;
   background: #0109db;
   text-decoration: none;
@@ -1982,7 +1981,6 @@ a:hover {
 }
 
 .header {
-  top: 0;
   left: 0;
   right: 0;
   z-index: 1200;
@@ -2454,7 +2452,6 @@ a:hover {
 .promo__wrap {
   z-index: 10;
   padding-top: 130px;
-  padding-bottom: 60px;
   position: relative;
 }
 .promo__subtitle {
@@ -2566,6 +2563,14 @@ a:hover {
     display: block;
     position: absolute;
   }
+}
+.promo__list{
+  list-style: none;
+  font-size: 2.2rem;
+  padding-left: 0;
+}
+.promo__list li{
+  margin-bottom: 20px;
 }
 @media (min-width: 1230px) {
   .promo__wrap {
@@ -4642,6 +4647,15 @@ a:hover {
   margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .down__arrow{
+    display: none;
+  }
+  .header__logo{
+    width: 240px;
+  }
+}
+
 .down__arrow button{
   background-color: transparent;
   border: none;
@@ -5253,7 +5267,7 @@ select {
 }
 
 .promo__content{
-  margin-top: 30px !important;
+  margin-top: 45px !important;
 }
 
 .button-input2{
@@ -5432,6 +5446,16 @@ select {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .curse__subtext ul li:before{
+    display: none;
+  }
+  .curse__subtext ul li{
+    padding-left: 0px;
+
+  }
 }
 
 .cost__content-title{
