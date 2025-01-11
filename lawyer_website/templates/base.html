@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>ДК: образование, строительство, инвестиции </title>
-    <meta name="description"
-        content="ДК: образование, строительство, инвестиции">
+    <meta name="description" content="ДК: образование, строительство, инвестиции">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:locale" content="ru_RU">
@@ -48,205 +47,221 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
 </head>
+
 <body>
-<div class="page">
+    <div class="page">
 
 
-    <header class="header">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__logo">
-               ДК: образование, строительство, инвестиции
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        ДК: образование, строительство, инвестиции
 
-                </div>
-                <div class="down__arrow" >
-                    <button id="scrollToFooter">
-                    <h2>вниз</h2>
-                </button>
-                </div>
-                <ul class="header__contact">
-                    <li><a class="header__contact_email" href="mailto:info@school-broker.ru">info@school-broker.ru</a></li>
-                    <li><a class="header__contact_phone" href="tel:+79099740123">+7 (909) 974-01-23</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    {% block content %}
-
-    {% endblock %}
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer__row">
-                <div class="footer__about">
-                    <div class="footer__logo">
-                        <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="">
                     </div>
-
-                </div>
-                <nav class="footer__nav">
-                    <ul>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://t.me/fs_School_CB">ТГ Канал</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://t.me/credit_school_bot">ТГ Бот</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://taplink.cc/svetlana_fs">Taplink</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://ref.lovicashback.ru/users/account">ЛОВИ CASHBACK</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://t.me/fs_School_CB/61">Пройди опросы</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://telegra.ph/POLEZNYE-SSYLKI-OT-FS-SHKOLY-KREDITNOGO-BROKERA-09-02">Все Полезные ссылки</a></li>
-                        <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links" href="https://t.me/fs_School_CB/61">Сертификаты</a></li>
+                    <div class="down__arrow">
+                        <button id="scrollToFooter">
+                            <h2>вниз</h2>
+                        </button>
+                    </div>
+                    <ul class="header__contact">
+                        <li><a class="header__contact_email"
+                                href="mailto:info@school-broker.ru">info@school-broker.ru</a></li>
+                        <li><a class="header__contact_phone" href="tel:+79099740123">+7 (909) 974-01-23</a></li>
                     </ul>
-                </nav>
-                <ul class="footer__contact">
-                    <li style="margin-bottom: 20px"><a class="footer__contact_email" href="{% url 'index' %}" style="color: #0109db;">Главная страница</a></li>
-
-                    <li><a class="footer__contact_email" href="mailto:info@school-broker.ru">info@school-broker.ru</a></li>
-                    <li style="margin-top: 10px"><a class="footer__contact_phone"  href="tel:+79099740123">+7 (909) 974-01-23</a></li>
-
-                </ul>
-                <div class="footer__info">
-                    <div class="footer__social">
-                        <a href="mailto:info@school-broker.ru" target="_blank">
-                            <i>
-                                <svg fill="#fff" width="21px" version="1.1" id="Layer_1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
-                                    stroke="#fff">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                    </g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path id="Mail"
-                                            d="M58.0034485,8H5.9965506c-3.3136795,0-5.9999995,2.6862001-5.9999995,6v36c0,3.3137016,2.6863203,6,5.9999995,6 h52.006897c3.3137016,0,6-2.6862984,6-6V14C64.0034485,10.6862001,61.3171501,8,58.0034485,8z M62.0034485,49.1108017 L43.084549,30.1919994l18.9188995-12.0555992V49.1108017z M5.9965506,10h52.006897c2.2056007,0,4,1.7943001,4,4v1.7664003 L34.4677505,33.3134003c-1.4902,0.9492989-3.3935013,0.9199982-4.8495998-0.0703011L1.9965508,14.4694996V14 C1.9965508,11.7943001,3.7910507,10,5.9965506,10z M1.9965508,16.8852005L21.182251,29.9251003L1.9965508,49.1108017V16.8852005z M58.0034485,54H5.9965506c-1.6473999,0-3.0638998-1.0021019-3.6760998-2.4278984l20.5199013-20.5200024l5.6547985,3.843401 c1.0859013,0.7383003,2.3418007,1.1083984,3.5995998,1.1083984c1.1953011,0,2.3925018-0.3339996,3.4463005-1.0048981 l5.8423996-3.7230015l20.2961006,20.2961025C61.0673485,52.9978981,59.6508713,54,58.0034485,54z">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </i>
-                        </a>
-                        <a href="https://t.me/school_broker_fs" target="_blank">
-                            <i>
-                                <svg width="21px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    stroke="#fff">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                    </g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
-                                            fill="#fff"></path>
-                                    </g>
-                                </svg> </i>
-                        </a>
-                        <a href="https://vk.com/id817929266" target="_blank">
-                            <i>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ico_svg">
-                                    <path
-                                        d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
-                                </svg>
-                            </i>
-                        </a>
-                        <a href="https://www.youtube.com/@Svetlana_fs?si=uvWjg4cNWWCG0Gx8 " target="_blank">
-                                <img src="{% static 'img/youtube.png' %}" alt="" style="width: 30px; height: 20px">
-                        </a>
-                        <a href="https://tenchat.ru/2387960" target="_blank">
-                            <img src="{% static 'img/tenchat.png' %}" alt="" style="width: 26px; height: 26px">
-                        </a>
-                        <a href="https://discord.gg/mr7yZqEEh" target="_blank">
-                         <img src="{% static 'img/dis.png' %}" alt="" style="width: 27px; height: 27px; margin-top: -2px">
-                        </a>
-                        <a href="https://discord.gg/mr7yZqEEh" target="_blank">
-                            <img src="{% static 'img/twitch.png' %}" alt="" style="width: 25px; height: 25px">
-                        </a>
-                        <a href="" target="_blank">
-                            <img src="{% static 'img/rosgram.png' %}" alt="" style="width: 25px; height: 25px">
-                        </a>
-                        
-                    </div>
-                    <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3" class="footer__privacy" download>Политика
-                        конфеденциальности</a>
                 </div>
             </div>
-        </div>
-    </footer>
+        </header>
+        {% block content %}
+
+        {% endblock %}
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__about">
+                        <div class="header__logo">
+                            ДК: образование, строительство, инвестиции
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://t.me/ibc_dunie_business">ТГ Канал CVB</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://t.me/dunie_press">ТГ Канал Дуние</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://ibcdunie.com">Сайт Дуние</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://cvb.ooo">Сайт CVB</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://taplink.cc/svetlana_fs">Taplink</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://ref.lovicashback.ru/users/account">ЛОВИ CASHBACK</a></li>
+                            <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://t.me/Living_water_407">Образ будущего</a></li>
+                            <!-- <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://telegra.ph/POLEZNYE-SSYLKI-OT-FS-SHKOLY-KREDITNOGO-BROKERA-09-02">Все
+                                    Полезные ссылки</a></li> -->
+                            <!-- <li><img src="{% static 'img/link.png' %}" alt=""><a class="footer__links"
+                                    href="https://t.me/fs_School_CB/61">Сертификаты</a></li> -->
+                        </ul>
+                    </nav>
+                    <ul class="footer__contact">
+                        <li style="margin-bottom: 20px"><a class="footer__contact_email" href="{% url 'index' %}"
+                                style="color: #0109db;">Главная страница</a></li>
+
+                        <li><a class="footer__contact_email"
+                                href="mailto:info@school-broker.ru">info@school-broker.ru</a></li>
+                        <li style="margin-top: 10px"><a class="footer__contact_phone" href="tel:+79099740123">+7 (909)
+                                974-01-23</a></li>
+
+                    </ul>
+                    <div class="footer__info">
+                        <div class="footer__social">
+                            <a href="mailto:info@school-broker.ru" target="_blank">
+                                <i>
+                                    <svg fill="#fff" width="21px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+                                        stroke="#fff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path id="Mail"
+                                                d="M58.0034485,8H5.9965506c-3.3136795,0-5.9999995,2.6862001-5.9999995,6v36c0,3.3137016,2.6863203,6,5.9999995,6 h52.006897c3.3137016,0,6-2.6862984,6-6V14C64.0034485,10.6862001,61.3171501,8,58.0034485,8z M62.0034485,49.1108017 L43.084549,30.1919994l18.9188995-12.0555992V49.1108017z M5.9965506,10h52.006897c2.2056007,0,4,1.7943001,4,4v1.7664003 L34.4677505,33.3134003c-1.4902,0.9492989-3.3935013,0.9199982-4.8495998-0.0703011L1.9965508,14.4694996V14 C1.9965508,11.7943001,3.7910507,10,5.9965506,10z M1.9965508,16.8852005L21.182251,29.9251003L1.9965508,49.1108017V16.8852005z M58.0034485,54H5.9965506c-1.6473999,0-3.0638998-1.0021019-3.6760998-2.4278984l20.5199013-20.5200024l5.6547985,3.843401 c1.0859013,0.7383003,2.3418007,1.1083984,3.5995998,1.1083984c1.1953011,0,2.3925018-0.3339996,3.4463005-1.0048981 l5.8423996-3.7230015l20.2961006,20.2961025C61.0673485,52.9978981,59.6508713,54,58.0034485,54z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </a>
+                            <a href="https://t.me/school_broker_fs" target="_blank">
+                                <i>
+                                    <svg width="21px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        stroke="#fff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+                                                fill="#fff"></path>
+                                        </g>
+                                    </svg> </i>
+                            </a>
+                            <a href="https://vk.com/id817929266" target="_blank">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ico_svg">
+                                        <path
+                                            d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+                                    </svg>
+                                </i>
+                            </a>
+                            <a href="https://www.youtube.com/@Svetlana_fs?si=uvWjg4cNWWCG0Gx8 " target="_blank">
+                                <img src="{% static 'img/youtube.png' %}" alt="" style="width: 30px; height: 20px">
+                            </a>
+                            <a href="https://tenchat.ru/2387960" target="_blank">
+                                <img src="{% static 'img/tenchat.png' %}" alt="" style="width: 26px; height: 26px">
+                            </a>
+                            <a href="https://discord.gg/mr7yZqEEh" target="_blank">
+                                <img src="{% static 'img/dis.png' %}" alt=""
+                                    style="width: 27px; height: 27px; margin-top: -2px">
+                            </a>
+                            <a href="https://discord.gg/mr7yZqEEh" target="_blank">
+                                <img src="{% static 'img/twitch.png' %}" alt="" style="width: 25px; height: 25px">
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="{% static 'img/rosgram.png' %}" alt="" style="width: 25px; height: 25px">
+                            </a>
+
+                        </div>
+                        <a href="https://telegra.ph/Politika-v-otnoshenii-obrabotki-personalnyh-dannyh-07-23-3"
+                            class="footer__privacy" download>Политика
+                            конфеденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-    <div class="footer_bottom">
-        <div class="container">
-            <div class="footer_bottom__wrap">
-                Школа квалифицированного инвестора занимается консультационной и обучающей деятельностью по подбору кредитных программ,
-                не является кредитной организацией и самостоятельно не выдает кредиты. Пользуясь сайтом вы соглашаетесь с <a href="{% static 'files/Soglashenie_na_site.docx' %}" download> условиями обработки данных</a> 
-                При полном или частичном использовании материалов ссылка на school-broker.ru обязательна
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="footer_bottom__wrap">
+                    Пользуясь сайтом вы соглашаетесь с <a href="{% static 'files/Soglashenie_na_site.docx' %}" download> условиями обработки данных</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
 
-<script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="{% static 'js/vendor/jquery.scrollTo.min.js' %}"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="{% static 'js/vendor/aos/aos.js' %}"></script>
-<script src="{% static 'js/vendor/jquery.maskedinput.min.js' %}"></script>
-<script src="{% static 'js/plugins.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/vendor/jquery.scrollTo.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="{% static 'js/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery.maskedinput.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 
-<script>
+    <script>
 
-    
-    
 
-    function scrollToSection() {
-        const section = document.getElementById("scrollToSection");
-        section.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+
+
+        function scrollToSection() {
+            const section = document.getElementById("scrollToSection");
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+        document.getElementById('scrollToFooter').addEventListener('click', function () {
+            const footer = document.getElementById('footer');
+            footer.scrollIntoView({ behavior: 'smooth' });
         });
-    }
-    document.getElementById('scrollToFooter').addEventListener('click', function() {
-        const footer = document.getElementById('footer');
-        footer.scrollIntoView({ behavior: 'smooth' });
-      });
-      const elementList = document.getElementById('elementList');
-const showMoreButton = document.getElementById('showMoreButton');
-const elements = elementList.getElementsByTagName('li');
-const initialVisibleCount = 5;
-let visibleCount = initialVisibleCount;
+        const elementList = document.getElementById('elementList');
+        const showMoreButton = document.getElementById('showMoreButton');
+        const elements = elementList.getElementsByTagName('li');
+        const initialVisibleCount = 5;
+        let visibleCount = initialVisibleCount;
 
-$(document).ready(function() {
-  const elementList = $('#elementList');
-  const elements = elementList.children('li');
-  const initialVisibleCount = 5;
-  let visibleCount = initialVisibleCount;
+        $(document).ready(function () {
+            const elementList = $('#elementList');
+            const elements = elementList.children('li');
+            const initialVisibleCount = 5;
+            let visibleCount = initialVisibleCount;
 
-  function updateVisibility() {
-    elements.hide();
-    elements.slice(0, visibleCount).show();
-    
-    if (visibleCount >= elements.length) {
-      $('#showMoreButton').hide();
-    } else {
-      $('#showMoreButton').show();
-    }
-  }
+            function updateVisibility() {
+                elements.hide();
+                elements.slice(0, visibleCount).show();
 
-  $('#showMoreButton').on('click', function() {
-    visibleCount += initialVisibleCount + 2;
-    updateVisibility();
-  });
+                if (visibleCount >= elements.length) {
+                    $('#showMoreButton').hide();
+                } else {
+                    $('#showMoreButton').show();
+                }
+            }
 
-  updateVisibility();
-});
+            $('#showMoreButton').on('click', function () {
+                visibleCount += initialVisibleCount + 2;
+                updateVisibility();
+            });
 
-</script>
+            updateVisibility();
+        });
+
+    </script>
 
 
-<script>
+    <script>
 
-</script>
-    
+    </script>
+
 
 </body>
 
