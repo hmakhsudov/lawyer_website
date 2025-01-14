@@ -587,13 +587,13 @@
 
     </div>
 </section>
-<section class="cvb__video">
+<!-- <section class="cvb__video">
     <video autoplay loop muted>
         <source src="{% static 'videos/cvb.MP4' %}" type="video/mp4">
         <p>Sorry, Your Browser Doesn't Support Embedded Videos. Here's the <a
                 href="https://www.youtube.com/watch?v=yDzQDeaW6O8">Link to the video</a></p>
     </video>
-</section>
+</section> -->
 <section class="cost" id="scrollToSection">
 
     <div class="cost__header">
@@ -635,12 +635,9 @@
                                         совместно с крупными участниками ассоциации.</li>
                                 </ul>
 
-                                <div class="cart_description"><a
-                                        href="https://telegra.ph/Trehdnevnyj-kurs-VIP-07-23">ОПИСАНИЕ</a></div>
-
                                 <div class="text_center">
-                                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
-                                            оплате</span></a>
+                                    <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Компенсация;
+                                            Депозит</span></a>
                                 </div>
                             </div>
                         </div>
@@ -971,43 +968,15 @@
                                     <strong>15 000</strong>
                                     <sub> руб</sub>
                                 </div>
-             
+                                
                                 <div class="text_center">
                                     <a href="{% url 'pay_info' %}" class="btn " data-target="VIP"><span>Перейти к
-                                            оплате</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> -->
-                <li style="margin: 0 auto; margin-bottom: 15px;">
-                    <div class="price price_optimal">
-                        <div class="price__box">
-                            <div class="price__wrap">
-                                <div class="price__title">Способы оплаты</div>
-                                <div class="price__intro" style="font-size: 2.1rem; ">Вы можете оплачивать
-                                    дополнительными способами:</div>
-                                <ul class="price__info ">
-                                    <a href="{% url 'pay_by_check' %}" class="btn ul_button">Плати по счету</a>
-                                    <a href="" class="btn ul_button">Плати долями</a>
-                                    <a href="" class="btn ul_button">Оплати в рассрочку</a>
-                                    <a href="" class="btn ul_button">Купи по email</a>
-                                    <a href="" class="btn ul_button">Купи в складчину</a>
-                                    <a href="" class="btn ul_button" style="margin-bottom: 0;">Тинькофф Кредит
-                                        Брокер</a>
-                                </ul>
-                                <div class="additional__block sklad">
-                                    <div class="additional__image"><img src="{% static 'img/check.png' %}" width="150px"
-                                            height="150px" alt=""></div>
-                                    <div class="additional__title" style="margin-bottom: 25px;">
-                                        <h3>Склад чеков</h3>
+                                        оплате</span></a>
                                     </div>
-                                    <a href="{% url 'sklad' %}" class="btn ul_button">Тут складируйте чек</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li> -->
                 <li>
                     <div class="price price_optimal">
                         <div class="price__box">
@@ -1037,6 +1006,34 @@
                                 <div class="text_center">
                                     <a href="{% url 'pay_info' %}" class="btn " data-target="Оптимал"><span>Перейти к
                                             оплате</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li style="margin: 0 auto; margin-bottom: 15px;">
+                    <div class="price price_optimal">
+                        <div class="price__box">
+                            <div class="price__wrap">
+                                <div class="price__title">Способы оплаты</div>
+                                <div class="price__intro" style="font-size: 2.1rem; ">Вы можете оплачивать
+                                    дополнительными способами:</div>
+                                <ul class="price__info ">
+                                    <a href="{% url 'pay_by_check' %}" class="btn ul_button">Плати по счету</a>
+                                    <a href="" class="btn ul_button">Плати долями</a>
+                                    <a href="" class="btn ul_button">Оплати в рассрочку</a>
+                                    <a href="" class="btn ul_button">Купи по email</a>
+                                    <a href="" class="btn ul_button">Купи в складчину</a>
+                                    <a href="" class="btn ul_button" style="margin-bottom: 0;">Тинькофф Кредит
+                                        Брокер</a>
+                                </ul>
+                                <div class="additional__block sklad">
+                                    <div class="additional__image"><img src="{% static 'img/check.png' %}" width="150px"
+                                            height="150px" alt=""></div>
+                                    <div class="additional__title" style="margin-bottom: 25px;">
+                                        <h3>Склад чеков</h3>
+                                    </div>
+                                    <a href="{% url 'sklad' %}" class="btn ul_button">Тут складируйте чек</a>
                                 </div>
                             </div>
                         </div>
