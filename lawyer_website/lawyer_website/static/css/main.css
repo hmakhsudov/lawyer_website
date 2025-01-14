@@ -2740,10 +2740,13 @@ a:hover {
 .promo__list li {
   margin-bottom: 20px;
 }
-
+.promo__title-text a{
+  color: #0109db;
+  text-decoration: none;
+}
 @media (min-width: 1230px) {
   .promo__wrap {
-    height: 2000px;
+    height: 2060px;
     padding-bottom: 140px;
   }
 
