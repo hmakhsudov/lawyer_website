@@ -2636,7 +2636,7 @@ a:hover {
   font-size: 2rem;
   line-height: 3rem;
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 700px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -2743,7 +2743,7 @@ a:hover {
 
 @media (min-width: 1230px) {
   .promo__wrap {
-    height: 1900px;
+    height: 2000px;
     padding-bottom: 140px;
   }
 
@@ -2783,7 +2783,6 @@ a:hover {
   }
 
   .promo__text {
-    margin-left: 70px;
     margin-bottom: 60px;
     min-width: 500px;
   }
