@@ -2746,8 +2746,8 @@ a:hover {
 }
 @media (min-width: 1230px) {
   .promo__wrap {
-    height: 2060px;
-    padding-bottom: 140px;
+    height: auto
+    
   }
 
   .promo__wrap:before {
@@ -3823,7 +3823,7 @@ a:hover {
   z-index: 20;
   position: relative;
   padding-top: 70px;
-  padding-bottom: 400px !important;
+  padding-bottom: 100px !important;
   background: url("../img/price__bg.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
@@ -3930,7 +3930,7 @@ a:hover {
 
   .cost__content {
     padding-top: 10px;
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
   }
 
   .cost__block {
@@ -3981,7 +3981,7 @@ a:hover {
   }
 
   .cost__content {
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
   }
 
   .cost__block {}
@@ -6039,12 +6039,13 @@ select {
 .message__content {
   font-weight: 500;
   font-size: 2rem;
+  line-height: 3rem;
 
 }
 
 .message__content span {
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 .message__content p {
