@@ -6028,7 +6028,7 @@ select {
 }
 
 .message {
-  margin-top: 30px;
+  margin-top: 70px;
   /* background-image: url('../img/promo__bg.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -6044,6 +6044,7 @@ select {
 
 .message__content span {
   font-weight: 700;
+  font-size: 2.6rem;
 }
 
 .message__content p {
