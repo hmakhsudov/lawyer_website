@@ -1560,14 +1560,14 @@ template {
   position: relative;
 }
 
-.arrow_down {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  right: 55px;
-  top: 11px;
+@media (max-width: 500px) {
+  .arrow_down{
+    display: none;
+  }
 }
-
+/* .arrow_down{
+  display: none;
+} */
 .wrapper_center {
   margin-bottom: 40px;
 }
@@ -3087,6 +3087,13 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 20px;
   }
+  .arrow_down {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 55px;
+  top: 11px;
+}
 
   .curse__content {
     display: -webkit-box;
